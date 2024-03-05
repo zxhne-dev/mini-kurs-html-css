@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+	  <style>
+	  .przyklad
+		  {
+			  text-align: center;
+			  font-size: 20px;
+			  background-color: white;
+			  padding: 10px;
+			  border-radius: 5px;
+			  width: 60%;
+			  margin-left: auto;
+			  margin-right: auto;
+			  color: black;
+			  border: grey solid 2px;
+		  }
+		  
+		  .prawy
+		  {
+			  margin-left: 5%;
+		  }
+		  
+		  kbd
+		  {
+			  background-color: #2e004d;
+			  padding: 2px;
+			  border-radius: 5px;
+			  font-size: 20px;
+		  }
+		  
+		  .znakispecjalne
+		  {
+			  	font-family: 'Open Sans', sans-serif;
+			  	font-size: 28px;
+				text-shadow: 2px 2px black;
+			  text-align: center;
+			  margin-top: 0px;
+		  }
+	  </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="tekst.html">Tekst</a></div></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+	
+<!-- Tekst -->
+<div class="one"><h3>Tekst</h3>
+ <div class="two"><br><br><br>
+    <p style="text-align: center;">
+      By móc uatrakcyjnić naszą stronę powinniśmy sformatować tekst zawarty na niej. Zmienić m.in. wielkość tekstu, kolor tekstu, wyróżnienia, pozycjonowanie.
+    </p>
+	 <br> 
+ </div>
+</div>
+<!-- Tekst -->
+	
+	
+<!-- Wielkość tekstu -->
+<div class="one"><h3>Wielkość tekstu</h3>
+ <div class="two" style="height: 55vh"><br><br><br>
+    <p style="text-align: center;">
+      By zmienić rozmiar tekstu należy go umieścić pomiędzy znacznikami
+      <span class="tag">&lt;font</span><span class="atrybut"> size=</span><span class="green">"x"</span>
+      <span class="tag">&gt;   
+      &lt;/font&gt;</span>
+	 <p style="text-align: center;">W miejscu <span class="green">X</span> należy wstawić interesujący nas rozmiar wraz z jednostką (np. <span class="green">10pt</span>, <span class="green">20px</span>).</p>
+	 <br>
+   <div class="half">
+      <h4>Kod HTML</h4>
+	   <div  class="halfin" style="padding-top: 25px; height: 100px"><span class="tag">&lt;font</span> <span class="atrybut">size=</span><span class="green">"7pt"</span><span class="tag">&gt;</span>Tekst<span class="tag">&lt;font&gt;</span></div>
+   </div>
+   <div class="half">
+      <h4>Rezultat</h4>
+      <div class="halfin" style=" padding-top: 25px;height: 100px"><font size="7pt">Tekst</font></div>
+   </div>
+ 
+ </div>
+
+</div>
+<!-- koniec Wielkość tekstu -->
+	
+<!-- Kolor tekstu -->
+<div class="one"><h3>Kolor tekstu</h3>
+   <div class="two" style="height: 57vh"><br><br><br>
+      <p style="text-align: center;">
+        By zmienić kolor tekstu należy go umieścić pomiędzy znacznikami  
+        <span class="tag">&lt;font</span><span class="atrybut"> color=</span><span class="green">"x"</span>
+        <span class="tag">&gt;   
+        &lt;/font&gt;</span>
+	   <p style="text-align: center;">W miejscu <span class="green">X </span>należy wstawić interesujący nas kolor poprzez wpisanie anglojęzycznej nazwy, kodu HEX, kodu RGB<br> (np. <span class="green">red</span>, <span class="green">#FF0000</span> lub <span class="green">RGB (255,0,0)</span>).</p>
+      <br>
+     <div class="half">
+        <h4>Kod HTML</h4>
+		 <div  class="halfin" style="padding-top: 35px; height: 100px"><span class="tag">&lt;font</span> <span class="atrybut">color=</span><span class="green">"red"</span><span class="tag">&gt;</span>Tekst<span class="tag">&lt;font&gt;</span></div>
+     </div>
+     <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style=" padding-top: 35px;height: 100px"><font color="red">Tekst</font></div>
+     </div>
+    
+   </div>
+  
+  </div>
+<!-- koniec Kolor tekstu -->
+	
+	
+<!-- Wyróżniki tekstu -->
+   <div class="one"><h3>Wyróżniki tekstu</h3>
+      <div class="two" style="height: 170vh"><br><br><br>
+         <p style="text-align: center;">
+            Możemy wyróżniać tekst poprzez takie metody jak: pogrubienie tekstu, pochylenie tekstu, pomniejszenie tekstu, podświetlenie tekstu, indeks górny, indeks dolny, tekst przekreślony, wyraz podkreślony.
+     
+     
+         </p><br>
+        <div class="half">
+           <h4>Kod HTML</h4>
+           <div  class="halfin" style="padding-top: 25px; height: 125vh">
+         <span class="tag">&lt;b&gt;<span class="white">Tekst pogrubiony</span>&lt;/b&gt;</span><br><br>
+         <span class="tag">&lt;strong&gt;<span class="white">Tekst pogrubiony</span>&lt;/strong&gt;</span><br><br>
+         <span class="tag">&lt;i&gt;<span class="white">Tekst pochylony</span>&lt;/i&gt;</span><br><br>
+         <span class="tag">&lt;em&gt;<span class="white">Tekst pochylony</span>&lt;/em&gt;</span><br><br>
+         <span class="tag">&lt;small&gt;<span class="white">Tekst pomniejszony</span>&lt;/small&gt;</span><br><br>
+         <span class="tag">&lt;big&gt;<span class="white">Tekst powiększony</span>&lt;/big&gt;</span><br><br>
+         <span class="tag">&lt;mark&gt;<span class="white">Tekst podświetlony</span>&lt;/mark&gt;</span><br><br>
+         Indeks <span class="tag" >&lt;sup&gt;<span class="white">górny</span>&lt;/sup&gt;</span><br><br>
+         Indeks <span class="tag"> &lt;sub&gt;<span class="white">dolny</span>&lt;/sub&gt;</span><br><br>
+	     <span class="tag">&lt;u&gt;<span class="white">Tekst podkreślony</span>&lt;/u&gt;</span><br><br>
+         <span class="tag">&lt;ins&gt;<span class="white">Tekst podkreślony</span>&lt;/ins&gt;</span><br><br>
+         <span class="tag">&lt;s&gt;<span class="white">Tekst przekreślony</span>&lt;/s&gt;</span><br><br>
+         <span class="tag">&lt;del&gt;<span class="white">Tekst przekreślony</span>&lt;/del&gt;</span><br><br>
+
+         
+         </div>
+        </div>
+        <div class="half">
+           <h4>Rezultat</h4>
+           <div class="halfin" style="padding-top: 25px;height: 125vh">
+            <b>Tekst pogrubiony</b><br><br>
+            <strong>Tekst pogrubiony</strong><br><br>
+            <i>Tekst pochylony</i><br><br>
+            <em>Tekst pochylony</em><br><br>
+            <small>Tekst pomniejszony</small><br><br>
+			<big>Tekst powiększony</big><br><br>
+            <mark>Tekst podświetlony</mark><br><br>
+            Indeks <sup>górny</sup><br><br>
+            Indeks <sub>dolny</sub><br><br>
+            <ins>Tekst podkreślony</ins><br><br>
+            <u>Tekst podkreślony</u><br><br>
+            <s>Tekst przekreślony</s><br><br>
+            <del>Tekst przekreślony</del><br><br>
+         </div>
+        </div>
+		  
+		  
+		 
+	   </div>
+     
+     </div>
+<!-- koniec Wyróżniki tekstu -->
+	
+<!-- Animacja Marquee -->
+   <div class="one"><h3>Animacja Marquee</h3>
+      <div class="two" style="height: 278vh"><br><br><br>
+        <xmp class="przyklad"><marquee>Tu wpisz tekst</marquee></xmp>
+		  <marquee>Tu wpisz tekst</marquee>
+		  <br><br><br>
+		<h4>Typ animacji</h4>
+		  <xmp class="przyklad"><marquee behavior="typ">Tu wpisz tekst</marquee></xmp>
+		 <div class="prawy"><br>
+		  <p>gdzie jako „typ” należy wpisać:</p>
+			 <ul>
+			 <li><kbd>scroll</kbd> -  tekst przesuwa się od prawej do lewej (domyślnie)</li>
+			 <li><kbd>alternate</kbd> – tekst przesuwa się od prawej do lewej, a następnie „odbija się” i powraca</li>
+			 <li><kbd>slide</kbd> – tekst przesunie się od prawej do lewej tylko raz, a później się zatrzyma i pozostanie nieruchomy</li>
+			 </ul>
+		  
+		  
+		  </div>
+		  <br>
+		  <br>
+		  <br>
+<h4>Kierunek</h4>
+		  <xmp class="przyklad"><marquee direction="kierunek">Tu wpisz tekst</marquee></xmp>
+		 <div class="prawy"><br>
+		  <p>gdzie jako „kierunek” należy wpisać:</p>
+			 <ul>
+			 <li><kbd>left</kbd> -  tekst będzie przesuwał się w lewo (domyślnie)</li>
+			 <li><kbd>right</kbd> – tekst będzie przesuwał się w prawo</li>
+			 <li><kbd>up</kbd> – przesuwanie w górę (nie obsługuje MSIE 3.01 ani Netscape 7)</li>
+			 <li><kbd>down</kbd> –  przesuwanie w dół (nie obsługuje MSIE 3.01 ani Netscape 7)</li>
+			 </ul>
+			 
+<h4>Ilość powtórzeń</h4>
+		  <xmp class="przyklad"><marquee loop="n">Tu wpisz tekst</marquee></xmp>
+
+			 <h4>Szybkość animacji</h4>
+		  <xmp class="przyklad"><marquee loop="n">Tu wpisz tekst</marquee></xmp>
+			 
+			 
+			 
+			 
+			<h4>Przkłady</h4> 
+			 <xmp style="background-color:brown;color: white;" class="przyklad"><marquee loop="2"><font size="30px">Tekst</font></marquee></xmp><br>
+			 <marquee loop="2"><font size="30px">Tekst</font></marquee><br>
+			  <xmp style="width: 70.83333333333333vw;background-color:brown;color: white;" class="przyklad"><marquee direction="right"><font style="font-family: arial; color:red">Tekst</font></marquee></xmp><br>
+			<marquee direction="right"><font style=" font-family: arial;color:red;">Tekst</font></marquee>
+			 <br><br><br><br>
+			  <xmp style="width: 71.52777777777777vw;background-color:brown;color: white;" class="przyklad"><marquee direction="up"><font size="28px" style="font-family: verdana;">Tekst</font></marquee></xmp><br>
+			<marquee direction="up"><font  size="28px" style="font-family: verdana;">Tekst</font></marquee>
+			 
+			  <br><br><br><br>
+			  <xmp style="width: 76.38888888888889vw;background-color:brown;color: white;" class="przyklad"><marquee behavior="alternate"><font size="28px" style="font-family: verdana;">Tekst</font></marquee></xmp><br>
+			<marquee behavior="alternate"><font  size="28px" style="font-family: verdana;">Tekst</font></marquee>
+	   </div>
+     
+     </div>
+<!-- koniec Animacja Marquee -->
+	</div>
+	
+<!-- prefermatowany tekst -->
+   <div class="one"><h3>Prefermatowany tekst</h3>
+      <div class="two" style="height: 1350px"><br><br><br>
+         <p style="text-align: center;">
+            Wprowadza tekst preformatowany, czyli napisany czcionką monotypiczną (o stałej szerokości znaku), który uwzględnia dodatkowe spacje, tabulację i znaki końca linii (nie trzeba stosować znaczników) oraz nie jest automatycznie zawijany. Dzięki niemu możesz np. wkleić na stronę WWW tekst, wprost ze zwykłego edytora, bez stosowania dodatkowych znaczników (niestety informacje dotyczące formatowania zostaną pominięte). Należy jednak przy tym pamiętać, aby tekst nie zawierał znaków: "<kbd>&lt;</kbd>" oraz "<kbd>&gt;</kbd>" <br> <xmp class="znakispecjalne">(w zamian używaj: &lt; i &gt;).</xmp>
+     
+     
+         </p><br>
+    <pre style="text-align: center; font-size: 20px;">
+
+Tekst preformatowany,<br> wyświetlany<br>czcionką monotypiczną
+
+(o stałej szerokości znaku)
+
+pozwala     wprowadzać<br>dodatkowe    spacje,
+
+    uwzględnia także
+
+        punkty tabulacji,
+
+i znaki końca akapitu.
+
+a1  a2  a3  a4
+
+b1  b2  b3  b4
+
+</pre>
+		  
+		  
+	  <p style="text-align: center;">
+           Możemy również dodać tagi <span class="tag">&lt;mark&gt; &lt;/mark&gt;</span> by podświetlić wcześniejszy tekst.
+		  
+     
+         </p>	  
+		     <pre style="text-align: center; font-size: 20px;">
+<mark>
+Tekst preformatowany,<br> wyświetlany<br>czcionką monotypiczną
+
+(o stałej szerokości znaku)
+
+pozwala     wprowadzać<br>dodatkowe    spacje,
+
+    uwzględnia także
+
+        punkty tabulacji,
+
+i znaki końca akapitu.
+
+a1  a2  a3  a4
+
+b1  b2  b3  b4
+</mark>
+</pre>
+	   </div>
+     
+     </div>
+<!-- koniec prefermatowany tekst -->
+	
+<!--  cytaty -->
+   <div class="one"><h3>Cytaty</h3>
+      <div class="two" style="height: 580px"><br><br><br>
+         <p style="text-align: center;">
+            Do tworzenia cytatów używamy dwóch dodatkowych tagów.<br>Osobę wypowiadającą cytowany tekst umieszczamy pomiędzy znacznikami <span class="tag">&lt;cite&gt;&lt;/cite&gt;</span>.<br> Natomiast to samego cytatu używamy znaczników <span class="tag">&lt;q&gt;&lt;/q&gt;</span>.
+     
+     
+         </p><br>
+        <div class="half">
+           <h4>Kod HTML</h4>
+           <div  class="halfin" style="padding-top: 25px; height: 190px">
+
+			   
+			   <span class="tag">&lt;cite&gt;</span>Józef Stalin<span class="tag">&lt;/cite&gt;</span> powiedział: <span class="tag">&lt;q&gt;</span>Nieważne, kto głosuje, ważne, kto liczy głosy.<span class="tag">&lt;/q&gt;</span>
+         
+         </div>
+        </div>
+        <div class="half">
+           <h4>Rezultat</h4>
+           <div class="halfin" style=" padding-top: 25px;height: 190px">
+           <cite>Józef Stalin</cite> powiedział: <q>Nieważne, kto głosuje, ważne, kto liczy głosy.</q>
+         </div>
+        </div>
+		  
+		  
+		 
+	   </div>
+     
+     </div>
+<!-- koniec cytaty-->
+	
+	<!-- akronimy -->
+   <div class="one"><h3>Akronimy</h3>
+      <div class="two" style="height: 160vh"><br><br><br>
+         <p style="text-align: center;">
+                   <p style="text-align: center;">
+           Do tworzenia akronimów możemy użyć tagów: <span class="tag">&lt;acronym&gt;&lt;/acronym&gt;</span> oraz <span class="tag">&lt;abbr&gt;&lt;/abbr&gt;</span>.<br>
+					   <br> Dodatkowo musimy pamiętać o dwóch atrybutach:<br>
+					
+		  <span class="atrybut">lang</span> - który określa z jakie języka pochodzi akronim (np. <span class="green">pl</span>,<span class="green">en</span>)<br>
+						<span class="atrybut">title</span> - rozwinięcie akronimu.
+		  
+     
+     
+         </p><br>
+     
+         <br>
+        <div class="half">
+           <h4>Kod HTML</h4>
+           <div  class="halfin" style="padding-top: 25px; height: 100vh">
+
+			    Najludniejszym i najbogatszym oraz trzecim pod względem wielkości stanem<br><br>
+
+			   <span class="tag">&lt;acronym <span class="atrybut">lang="<span class="green">en</span>"</span> <span class="atrybut">title="<span class="green">United States of America</span>"&gt;</span></span>USA<span class="tag">&lt;/acronym&gt;</span> <br><br>
+
+jest Kalifornia. Leżąca na terenie stanu Dolina Śmierci
+
+			   (86   <br><br><span class="tag">&lt;abbr <span class="atrybut">lang="<span class="green">pl</span>" title="<span class="green">metrów pod poziomem morza</span>"&gt;</span></span><br>m p.p.m. <span class="tag">&lt;/abbr&gt;</span> <br><br>)
+
+			   jest najniższym punktem w  <br><br> <span class="tag">&lt;acronym <span class="atrybut">lang="<span class="green">en</span>" title="<span class="green">United States of America</span>"</span>&gt;</span>USA <span class="tag">&lt;/acronym&gt;</span>
+			   
+         
+         </div>
+        </div>
+        <div class="half">
+           <h4>Rezultat</h4>
+           <div class="halfin" style=" padding-top: 25px;height: 100vh">
+             Najludniejszym i najbogatszym oraz trzecim pod względem wielkości stanem
+
+<acronym lang="en" title="United States of America">USA</acronym>
+
+jest Kalifornia. Leżąca na terenie stanu Dolina Śmierci
+
+ (86 <abbr lang="pl" title="metrów pod poziomem morza">m p.p.m.</abbr>)
+
+jest najniższym punktem w <acronym lang="en" title="United States of America">USA</acronym>.
+         </div>
+        </div>
+		  
+		  
+		 
+	   </div>
+     
+     </div>
+<!-- koniec akronimyy-->
+<!-- Pozycjonowanie tekstu -->
+   <div class="one" ><h3>Pozycjonowanie tekstu</h3>
+      <div class="two" style="height: 2950px"><br><br><br>
+         <p style="text-align: center;">
+           Możemy pozycjonować tekst: do prawej, do lewej, wyśrodkować oraz wyjustować. (Podobanie jak w programie Microsoft Word)
+           <br>
+           W tym celu tekst wstawaimy pomiędzy znacznikami <span class="tag">&lt;p&gt;&lt;/p&gt;</span>
+           dodatkowo to pierwszego znacznika dodajemy<br> <span class=" atrybut">style="text-align:<span class="green">x</span>;"</span>.<br>
+           W miejsce <span class="green">x</span> wstawiamy:
+           <ul>
+              <li><span class="green">left</span> - gdy chcemy by teskt był pozycjonowany do lewej (jest to domyślne pozycjonowanie);</li>
+              <li><span class="green">right</span> - gdy chcemy by teskt był pozycjonowany do prawej;</li>
+              <li><span class="green">center</span> - gdy chcemy wyśrodkować tekst;</li>
+              <li><span class="green">justify</span> - gdy chcemy wyjustować tekst.</li>
+           </ul>
+     
+         <br>
+         <h4>Tekst pozycjonowany do lewej</h4>
+        <div class="half" >
+           <h4>Kod HTML</h4>
+           <div  class="halfin" style="padding-top: 25px; height: 400px">
+            <span class="tag"> &lt;p <span class="atrybut">style="text-align: <span class="green">left</span>;"</span>&gt;</span>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula non eleifend luctus. 
+               Phasellus sollicitudin ultrices mollis. In ac varius arcu. 
+               <span class="tag">&lt;/p&gt;</span>
+         </div>
+        </div>
+        <div class="half">
+           <h4>Rezultat</h4>
+           <div class="halfin" style=" padding-top: 25px; height: 400px">
+            <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula non eleifend luctus. 
+            Phasellus sollicitudin ultrices mollis. In ac varius arcu. </p>
+         </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h4>Tekst pozycjonowany do Prawej</h4>
+        <div class="half" >
+         <h4>Kod HTML</h4>
+         <div  class="halfin" style="padding-top: 25px; height: 400px">
+            <span class="tag"> &lt;p <span class="atrybut">style="text-align: <span class="green">right</span>;"</span>&gt;</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula non eleifend luctus. 
+            Phasellus sollicitudin ultrices mollis. In ac varius arcu. 
+            <span class="tag">&lt;/p&gt;</span>
+       </div>
+      </div>
+      <div class="half">
+         <h4>Rezultat</h4>
+         <div class="halfin" style=" padding-top: 25px;height: 400px"><p style="text-align: right;"> Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Maecenas vulputate ligula non eleifend luctus. 
+            Phasellus sollicitudin ultrices mollis. In ac varius arcu. </p>
+            
+         </div>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h4>Tekst wyśrodkowany</h4>
+      <div class="half" >
+       <h4>Kod HTML</h4>
+       <div  class="halfin" style="padding-top: 25px; height: 400px">
+         <span class="tag"> &lt;p <span class="atrybut">style="text-align: <span class="green">center</span>;"</span>&gt;</span>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula non eleifend luctus. 
+         Phasellus sollicitudin ultrices mollis. In ac varius arcu. 
+         <span class="tag">&lt;/p&gt;</span>
+     </div>
+    </div>
+    <div class="half">
+       <h4>Rezultat</h4>
+       <div class="halfin" style=" padding-top: 25px;height: 400px"><p style="text-align: center;"> Lorem ipsum dolor sit amet, consectetur 
+         adipiscing elit. Maecenas vulputate ligula non eleifend
+          luctus. Phasellus sollicitudin ultrices mollis. In ac varius arcu. </p></div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h4>Tekst wyjustowany</h4>
+    <div class="half">
+     <h4>Kod HTML</h4>
+     <div  class="halfin" style="padding-top: 25px; height: 400px">
+      <span class="tag"> &lt;p <span class="atrybut">style="text-align: <span class="green">justify</span>;"</span>&gt;</span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula non eleifend luctus. 
+      Phasellus sollicitudin ultrices mollis. In ac varius arcu. 
+      <span class="tag">&lt;/p&gt;</span>
+    </div>
+    </div>
+    <div class="half">
+     <h4>Rezultat</h4>
+     <div class="halfin" style=" padding-top: 25px;height: 400px"><p style="text-align: justify;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Maecenas vulputate ligula non eleifend luctus. Phasellus sollicitudin ultrices mollis. In ac varius arcu. </p></div>
+    </div>
+   </div>
+
+   </div>
+<!-- koniec Pozycjonowanie tekstu --> 
+	
+      </div>
+     
+<br><br>
+<!-- script - nawigacja -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+ </body>
+</html>

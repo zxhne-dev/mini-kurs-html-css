@@ -1,0 +1,281 @@
+body{
+    background-color: rgb(4, 11, 43);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2vw;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.2222222222222223vw;
+}
+
+#kontener{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.06944444444444445vw solid rgb(0, 0, 0);
+    margin-bottom: 5.069708491761724vh;
+    box-shadow: rgb(58, 255, 75) 0px 0px 0.6944444444444444vw;
+    background-color: rgb(2, 7, 31);
+    color: rgb(145, 223, 121);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9027777777777778vw;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+#rejestracja
+{
+    width: 35%;
+    margin:0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.06944444444444445vw solid rgb(0, 0, 0);
+    margin-bottom: 5.069708491761724vh;
+    box-shadow: rgb(58, 255, 75) 0px 0px 0.6944444444444444vw;
+    background-color: rgb(2, 7, 31);
+    color: rgb(145, 223, 121);
+}
+
+
+#logowanie
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.06944444444444445vw solid rgb(0, 0, 0);
+    margin-bottom: 5.069708491761724vh;
+    box-shadow: rgb(58, 255, 75) 0px 0px 0.6944444444444444vw;
+    background-color: rgb(2, 7, 31);
+    color: rgb(145, 223, 121);
+}
+
+.row{
+    width: 100%;
+}
+
+.col, .full{
+    float: left;
+    position: relative;
+    width:100%;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+}
+
+.first{
+    height: 40.61796042617961vh;
+    max-height: 40.61796042617961vh;
+    min-height: 40.61796042617961vh;
+}
+
+.mid{
+    height: 60.404870624048705vh;
+    max-height: 60.404870624048705vh;
+    min-height: 60.404870624048705vh;
+}
+
+.last{
+    height: 58.9710806697108vh;
+    max-height: 58.9710806697108vh;
+    min-height: 58.9710806697108vh;
+}
+
+@media only screen and (min-width: 48em) { 
+    .col{
+        width: 50%;
+    }
+}
+
+img{
+    width: 6.25vw;
+    height: 11.406844106463879vh;
+
+}
+
+.footer {
+    color: white;
+    font-size: 1.25vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(22, 6, 32);
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(0, 255, 21, 0.226);
+}
+
+#btn{
+    margin-top: 1.267427122940431vh;
+    padding: 0.6944444444444444vw 1.267427122940431vh;
+    text-transform: uppercase;
+    background-color: rgb(22, 252, 110);
+    border: 0.06944444444444445vw solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 0.6944444444444444vw;
+    font-size: 1.1111111111111112vw;
+}
+
+#btn:first-child{
+    margin-left: 0.6944444444444444vw;
+}
+
+#btn:hover{
+    background-color: rgb(47, 122, 76);
+    box-shadow: rgb(0, 217, 255) 0px 0px 1.0416666666666667vw;
+    color: white;
+}
+
+.button{
+    text-align: center;
+}
+
+.answer{
+    cursor: pointer;
+    color: rgb(240, 240, 92)
+}
+
+.radio-avatar{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-avatar + img{
+    cursor: pointer;
+    margin-right: 0.6944444444444444vw;
+}
+
+.radio-avatar + img:hover{
+    box-shadow: rgb(0, 217, 255) 0px 0px 1.1805555555555556vw;
+    outline: 0.06944444444444445vw solid black;
+}
+
+.radio-avatar:checked + img{
+    outline: 0.2vw solid rgb(58, 255, 75);
+}
+
+textarea{
+    width: 24.305555555555557vw;
+    height: 19.011406844106464vh;
+    max-width: 24.305555555555557vw;
+    max-height: 19.011406844106464vh;
+    resize: none;
+}
+
+
+#uncheck{
+    margin-bottom: 1.267427122940431vh;
+    margin-top: 1.267427122940431vh;
+    cursor: pointer;
+}
+
+[type=file]{
+    cursor: pointer;
+}
+
+#rock{
+    background-image:url('profilowe/the_rock.jpg');
+    height: 11.406844106463879vh;
+    max-width: 11.406844106463879vh;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: rgb(255, 209, 58) 0px 0px 17px;
+}
+
+#rock:hover{
+    background-image:url('profilowe/dwayne-rock-sus.gif');
+    
+}
+
+#anime{
+    background-image:url('profilowe/angela28.jpg');
+    height: 11.406844106463879vh;
+    max-width: 11.406844106463879vh;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: rgb(255, 209, 58) 0px 0px 17px;
+}
+
+#anime:hover{
+    background-image:url('profilowe/angela28.gif');
+    
+}
+
+i{
+    font-size: 0.9027777777777778vw;
+}
+
+.zmiana_dlugosci{
+    width: 11.805555555555555vw;
+    height: 1.9011406844106464vh;
+}
+
+
+
+[type=number]{
+    width: 11.805555555555555vw;
+    height: 1.9011406844106464vh;
+}
+
+[type=color]{
+    width: 5vw;
+    height: 5vh;
+}
+
+#ile{
+    width: 2.7777777777777777vw;
+    height: 1.9011406844106464vh;
+}
+
+legend{
+    text-align: right;
+    font-size: 1.25vw;
+}
+
+.legend_center{
+    text-align: center;
+    font-size: 1.5277777777777777vw;
+}
+
+
+fieldset{
+    border-radius: 20px;
+}
+
+
+
+select{
+    width: 14.583333333333334vw;
+    font-size: 0.91vw; 
+}
+
+
+#branza{
+    height: 15.209125475285171vh;
+}
+
+#gry{
+    height: 13.307984790874524vh;
+}
+
+#muzyka{
+    height: 17.74397972116603vh;
+}

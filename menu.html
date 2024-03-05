@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Menu</title>
+   <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+<div class="menu">
+   <a href="home.html" target="prawa">Strona Główna</a>
+   <a href="html/html.html" target="prawa">HTML</a>
+   <a href="css.html" target="prawa">CSS</a>
+   <a href="Sprawdzian/kartkówka.html" target="prawa">Sprawdzian</a>
+   <a href="Tabela z kolorami/tabela z kolorami.html" target="prawa">Tabela z kolorami</a>
+   <a href="Listy/Listy.html" target="prawa">Listy</a>
+   <a href="Tabele, listy, łącza/index.html" target="prawa">Tabele, lity, łącza</a>
+   <a href="Formularz/index.html" target="prawa">Formularze</a>
+   <a href="Multimedia/index.html" target="prawa">Multimedia</a>
+   <a href="Ciekawostki/ciekawostki.html" target="prawa">Ciekawostki</a>
+   <a href="Linki/linki.html" target="prawa">Linki</a>
+   <a href="Kontakt/kontakt.html" target="prawa">Kontakt</a>
+   <p id="stopka"></p>
+   <script>
+      const rok = new Date().getFullYear();
+      const p = document.getElementById('stopka');
+      p.innerHTML = `© Bartosz Piasecki ${rok}`;
+   </script>
+</div>
+</body>
+</html>

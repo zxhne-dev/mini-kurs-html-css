@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+	  
+	  
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+    <script src="jquery.scrollTo.min.js"></script>
+     
+    <script>
+         
+        jQuery(function($)
+        {
+            
+            $.scrollTo(0);
+            $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+        }
+        );
+         
+     
+     
+    </script>
+	  
+	  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="znaki.html">Znaki </a></div></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+<!-- znaki -->
+<div class="one"><h3>Znaki specjalne </h3><br><br><br>
+ <div class="two"><p style="text-align: center;">Mamy możliwość wprowadzenia znaków, które nie znajdują się na 
+   klawiaturze lub są zarezerwowane dla kodu HTMLa <br>(np. znaki otwierające i zamykające tagi &lt; &gt;).<br><br>
+Poniżej znajdziesz tabelę takich znaków (tj. znaków specjalnych), by wstawić je na swoją stronę musisz wpisać frazę podaną w kolumnie "Encja".</p>
+
+<div class="tabelaznakow" align="center">
+   <figure><table><tbody><tr class="naglowek"><td>Podgląd</td><td>Unicode</td><td>Encja</td><td>Kod HTML</td></tr>
+      <tr><td class="kol1">←</td><td>U+02190</td><td>&amp;larr;</td><td>&amp;#8592;</td></tr>
+      <tr><td class="kol1">↑</td><td>U+02191</td><td>&amp;uarr;</td><td>&amp;#8593;</td></tr>
+      <tr><td class="kol1">→</td><td>U+02192</td><td>&amp;rarr;</td><td>&amp;#8594;</td></tr>
+      <tr><td class="kol1">↓</td><td>U+02193</td><td>&amp;darr;</td><td>&amp;#8595;</td></tr>
+      <tr><td class="kol1">&#x2194;</td><td>U+02194</td><td>&amp;harr;</td><td>&amp;#8596;</td></tr>
+      <tr><td class="kol1">&#x2195;</td><td>U+02195</td><td>&amp;varr;</td><td>&amp;#8597;</td></tr>
+      <tr><td class="kol1">&#x2196;</td><td>U+02196</td><td>&amp;nwarr;</td><td>&amp;#8598;</td></tr>
+      <tr><td class="kol1">&#x2197;</td><td>U+02197</td><td>&amp;nearr;</td><td>&amp;#8599;</td></tr>
+      <tr><td class="kol1">&#x2198;</td><td>U+02198</td><td>&amp;searr;</td><td>&amp;#8600;</td></tr>
+      <tr><td class="kol1">&#x2199;</td><td>U+02199</td><td>&amp;swarr;</td><td>&amp;#8601;</td></tr>
+      <tr><td class="kol1">↚</td><td>U+0219A</td><td>&amp;nlarr;</td><td>&amp;#8602;</td></tr>
+      <tr><td class="kol1">↛</td><td>U+0219B</td><td>&amp;nrarr;</td><td>&amp;#8603;</td></tr>
+      <tr><td class="kol1">↜</td><td>U+0219C</td><td>&amp;larrw;</td><td>&amp;#8604;</td></tr>
+      <tr><td class="kol1">↝</td><td>U+0219D</td><td>&amp;rarrw;</td><td>&amp;#8605;</td></tr>
+      <tr><td class="kol1">↞</td><td>U+0219E</td><td>&amp;Larr;</td><td>&amp;#8606;</td></tr>
+      <tr><td class="kol1">↟</td><td>U+0219F</td><td>&amp;Uarr;</td><td>&amp;#8607;</td></tr>
+      <tr><td class="kol1">↠</td><td>U+021A0</td><td>&amp;Rarr;</td><td>&amp;#8608;</td></tr>
+      <tr><td class="kol1">↡</td><td>U+021A1</td><td>&amp;Darr;</td><td>&amp;#8609;</td></tr>
+      <tr><td class="kol1">↢</td><td>U+021A2</td><td>&amp;larrtl;</td><td>&amp;#8610;</td></tr>
+      <tr><td class="kol1">↣</td><td>U+021A3</td><td>&amp;rarrtl;</td><td>&amp;#8611;</td></tr>
+      <tr><td class="kol1">↤</td><td>U+021A4</td><td>&amp;mapstoleft;</td><td>&amp;#8612;</td></tr>
+      <tr><td class="kol1">↥</td><td>U+021A5</td><td>&amp;mapstoup;</td><td>&amp;#8613;</td></tr>
+      <tr><td class="kol1">↦</td><td>U+021A6</td><td>&amp;mapstoright;</td><td>&amp;#8614;</td></tr>
+      <tr><td class="kol1">↧</td><td>U+021A7</td><td>&amp;mapstodown;</td><td>&amp;#8615;</td></tr>
+      </tbody></table></figure>
+
+      
+<br><br><br>
+	
+	
+<div class="link">
+<h2 style="padding-left: 90px;padding-right: 90px;">Poniżej znajdziesz odnośniki do innych przydatnych stron ze znakami specjalnymi</h2><br>
+
+<ul>
+
+   <li><a href="http://www.kurshtml.edu.pl/html/symbole,znaki.html" target="_blank">kurshtml.edu.pl (znaki specjalne)</a></li>
+   <li><a href="https://ifj.edu.pl/private/krawczyk/kurshtml/znaki/znaki.htm" target="_blank">ifj.edu.pl</a></li>
+
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+   
+
+ </div>
+
+</div>
+
+ <div class="one" ><h3>Emotikony (emoji)</h3>
+      <div class="two" style="height: 1450px"><br><br><br>
+        <p>Emoji to specjalny rodzaj znaku przedstawiający piktogram graficzny. Mimo iż często wygląda jak ikona obrazkowa, to tak naprawdę można go wstawić w zasadzie wszędzie tam, gdzie wpisuje się zwykły tekst. Może to być np. okno rozmowy większości komunikatorów internetowych albo dodawania nowej wiadomości w zasadzie w dowolnym serwisie społecznościowym.</p>
+<h4>Przykłady</h4><br>
+		  
+
+<div  class="tabelaznakow" align="center">
+		 <table >
+		  <tr><td></td><td></td></tr>
+			 <tr><td class="kolumna1">😀</td><td class="kolumna2" >&amp;#128512;</td></tr>
+			 <tr><td class="kolumna1">😂</td><td class="kolumna2">&amp;#128514;</td></tr>
+			 <tr><td class="kolumna1">😇</td><td class="kolumna2">&amp;#128519;</td></tr>
+			 <tr><td class="kolumna1">&#129322;</td><td class="kolumna2">&amp;#129322;</td></tr>
+			 <tr><td class="kolumna1">&#129297;</td><td class="kolumna2">&amp;#129297;</td></tr>
+			 <tr><td class="kolumna1">&#129296;</td><td class="kolumna2">&amp;#129296;</td></tr>
+			 <tr><td class="kolumna1">&#128528;</td><td class="kolumna2">&amp;#128528;</td></tr>
+			 <tr><td class="kolumna1">&#128556;</td><td class="kolumna2">&amp;#128556;</td></tr>
+			 <tr><td class="kolumna1">&#128564;</td><td class="kolumna2">&amp;#128564;</td></tr>
+			 <tr><td class="kolumna1">&#129319;</td><td class="kolumna2">&amp;#129319;</td></tr>
+			 <tr><td class="kolumna1">&#129397;</td><td class="kolumna2">&amp;#129397;</td></tr>
+			 <tr><td class="kolumna1">&#129312;</td><td class="kolumna2">&amp;#129312;</td></tr>
+			 <tr><td class="kolumna1">&#128053;</td><td class="kolumna2">&amp;#128053;</td></tr>
+			 <tr><td class="kolumna1">&#128054;</td><td class="kolumna2">&amp;#128054;</td></tr>
+			 <tr><td class="kolumna1">&#129418;</td><td class="kolumna2">&amp;#129418;</td></tr>
+			 <tr><td class="kolumna1">&#128052;</td><td class="kolumna2">&amp;#128052;</td></tr>
+			 <tr><td class="kolumna1">&#128046;</td><td class="kolumna2">&amp;#128046;</td></tr>
+			 <tr><td class="kolumna1">&#128015;</td><td class="kolumna2">&amp;#128015;</td></tr>
+			 <tr><td class="kolumna1">&#127875;</td><td class="kolumna2">&amp;#127875;</td></tr>
+			 <tr><td class="kolumna1">&#129512;</td><td class="kolumna2">&amp;#129512;</td></tr>
+			 <tr><td class="kolumna1">&#127873;</td><td class="kolumna2">&amp;#127873;</td></tr>
+			 <tr><td class="kolumna1">&#9917;</td><td class="kolumna2">&amp;#9917;</td></tr>
+			 <tr><td class="kolumna1">&#9918;</td><td class="kolumna2">&amp;#9918;</td></tr>
+			 <tr><td class="kolumna1">&#129358;</td><td class="kolumna2">&amp;#129358;</td></tr>
+		  </table>
+		  
+		  </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+   </div>
+   </div>
+
+
+
+	</div>
+<br><br><br><br><br><br>
+	<!-- koniec znaki -->
+	<!-- script - nawigacja -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+ </body>
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(35, 35, 77);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+a{
+    color: rgb(255, 255, 121);
+}

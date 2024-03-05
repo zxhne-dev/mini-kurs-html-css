@@ -1,0 +1,415 @@
+*{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	background-color: antiquewhite;
+	margin: 0px !important;
+	color: white;
+	
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.container
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.half
+{
+	width: 40%;
+	background-color: #1100a7;
+	border-radius: 30px;
+	margin-left: 7%;
+	
+	float: left;
+	border: 2px solid #25004d;
+	margin-bottom: 30px;
+
+}
+.halfin
+{
+	background-color: #2321a3;
+	border-radius: 30px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	
+	font-size: 25px;
+	padding-left: 10%;
+	padding-right: 10%;
+	
+	
+	
+}
+.one
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	background-color: #171975;
+	margin-top: 40px;
+	
+}
+
+.two
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	background-color: #0e1688;
+
+}
+
+.three
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	background-color: #203386;
+}
+
+
+.four
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	background-color: #1c1491;
+}
+
+
+.five
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+	background-color: #0f237c;
+}
+
+
+h1
+{
+	font-family: 'Teko', sans-serif;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 90px;
+	padding-top: 20px;
+	margin-bottom: -20px;
+	text-shadow: 4px 4px black;
+	
+}
+
+h2 
+{
+	font-family: 'Teko', sans-serif;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	padding: 10px;
+	text-shadow: 4px 4px black;
+}
+
+h3
+{
+	font-family: 'Teko', sans-serif;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 60px;
+	padding: 20px;
+	margin-bottom:0px;
+	text-shadow: 4px 4px black;
+}	
+
+.lista
+{
+	text-transform: none;
+	text-align: left;
+	font-size: 40px;
+	margin-top: -30px;;
+	margin-bottom: -35px;
+	text-shadow: none;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+h4
+{
+	font-family: 'Teko', sans-serif;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding: 5px;
+	text-shadow: 4px 4px black;
+}	
+
+.one p,ul
+{
+	font-family: 'Teko', sans-serif;
+	color:white;
+	text-align: justify;
+	font-size: 30px;
+	padding: 30px;
+	margin-top: -60px;
+	margin-bottom: -30px;
+	text-shadow: 2px 2px black;
+}
+
+li
+{
+	margin-left: 30px;
+}
+
+.podpunkt
+{
+	margin-left: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+
+}
+.podpunkt:first-child
+{
+	margin-top: 30px;
+}
+
+
+
+.spis
+{
+	font-size: 40px;
+	color: white;
+	font-family: 'Teko', sans-serif;
+	padding: 10px;
+	margin-left: 160px;
+	letter-spacing: 4px;
+}
+
+
+
+
+.nav
+{ 
+	width: 100%;
+	padding: 10px 0;
+	background-color: rgb(27, 32, 65);
+	border-radius: 20px;
+	margin-right: auto;
+	text-align: center;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+.sticky
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.nav ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	
+	height: 33px;
+	line-height: 200%;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.nav ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	font-family: 'Teko', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	padding-top: 3px;
+	padding-bottom: 5px;	
+}
+
+.nav ol > li
+{
+	float: left;
+	width: 115px;
+	height: 35px;
+	border-right: 2px solid white;
+	margin-left: 0px;
+}
+
+.nav ol > li:first-child
+{
+	border-left: 2px solid white;
+	
+}
+
+.nav ol > li:hover
+{
+	background-color:#16018f;
+	
+}
+
+.tag
+{
+	color: red;
+	font-weight: 400;
+}
+
+.atrybut
+{
+	color: #ffc800;
+}
+.white
+{
+	color: white;
+}
+
+.green
+{
+	color: #4fff78
+
+
+}
+
+.halfin p 
+{
+	padding-top: 45px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	text-shadow: 2px 2px black;
+	
+}
+
+
+.kol1
+{
+	height: 35px;
+	width: 120px;
+
+}
+
+span 
+{
+	text-shadow: 2px 2px black;
+}
+
+
+
+
+.tabelaznakow table
+{
+	border-collapse: collapse;
+	border: 1px solid white;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.tabelaznakow td
+{
+	border: 1px solid white;
+	text-align: center;
+}
+.naglowek
+{
+	background-color: #023064;
+}
+
+.link li
+{
+	margin-left: 200px;
+	font-size: 40px;
+}
+.link a
+{
+ font-size: 40px;
+ color: white;
+ text-decoration: none;
+font-family: 'Teko', sans-serif;
+}
+
+.inputs
+{
+	margin-left: 40px;
+
+}
+
+.sot
+{
+	margin-left: 40px;
+
+}
+
+
+.inputs b
+{
+	color: #32a832;
+}
+
+.sot b
+{
+	color: red;
+}
+a
+{
+	text-decoration: none;
+}
+
+
+.gora
+{
+	margin-top: -100px;
+	display: none;
+}
+
+.kolumna1 
+{
+	width: 50px;
+	height: 40px;
+}
+
+.kolumna2
+{
+	width: 140px;
+}
+
+.scrollup {
+    display: none;
+    background-color: rgb(54, 0, 202);
+    width: 4vw;
+    height: 7vh;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 3.802281368821293vh;
+    right: 0.4166666666666667vw;
+    text-decoration: none;
+}
+
+.scrollup:hover {
+    background-color: rgb(16, 115, 145);
+}
+
+.scrollup:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 6.5vh;
+    color: rgb(255, 255, 255);
+    
+}

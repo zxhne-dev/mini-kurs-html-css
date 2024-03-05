@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.bg{
+    background-size: cover;
+}
+
+table{
+    border-color: white;
+}
+
+a:hover{
+    font-weight: bold;
+}
+

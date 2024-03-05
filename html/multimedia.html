@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="multimedia.html">Multimedia</a></div></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+<!-- multimedia -->
+<div class="one"><h3>Multimedia</h3>
+ <div class="two">
+   <br><br><p style="text-align: center;">W celu uatrakcyjnienia wyglądu naszej witryny możemy wstawić na nią pliki multimedialne takie jak video lub audio.<br> W tym celu możemy postąpić podobnie, jak z grafiką wstawiając pliki znajdujące się na naszym serwerze/komputerze lub poprzez link zewnętrzny.
+   </p>
+ 
+   
+</div></div>
+<br><br>
+<!-- koniec multimedia -->
+<!-- Pliki Video umieszczony na dysku -->
+<div class="one"><h3>Pliki Video umieszczony na dysku</h3>
+   <div class="two" style="height: 780px;">
+     <br><br><p style="text-align: center;">By wstawić plik video znajdujący się na naszym dysku używamy poniższej składni:<br>
+      <span class="tag">&lt;video <span class="atrybut">width=<span class="green">""</span> height=<span class="green">""</span> controls</span>&gt;<br></span>
+
+      <span class="tag">&lt;source <span class="atrybut">src=<span class="green">"ścieżka do pliku"</span> type=<span class="green">"video/mp4"</span></span>&gt;</span> <br>
+      
+         <span class="tag"> &lt;/video&gt;</span><br>
+         Podobnie jak w przypadku obrazków, podając jeden z atrybutów rozmiaru, drugi zostanie ustawiony automatycznie.
+  </p>
+  <br>
+     <div class="half" >
+        <h4>Kod HTML</h4>
+        <div  class="halfin" style="padding-top: 25px; height: 300px; text-align: left;">
+         <span class="tag">&lt;video <span class="atrybut">height=<span class="green">"220px"</span> controls</span>&gt;<br></span>
+
+         <span class="tag">&lt;source <span class="atrybut">src=<span class="green">"../Multimedia/<br>Multimedia/nosz_kurna_akurat.mp4"</span> type=<span class="green">"video/mp4"</span></span>&gt;</span> <br>
+         
+            <span class="tag"> &lt;/video&gt;</span>
+        </div>
+        
+        </div>
+        <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style=" padding-top: 25px;height: 300px">
+         <video height="220px"  controls>
+            <source src="../Multimedia/Multimedia/nosz_kurna_akurat.mp4" type="video/mp4">
+            </video>
+             
+        </div>
+        
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p style="text-align: center;">Jeżeli masz problem z umieszczeniem pliku <a target="prawa" style="color:coral;text-decoration: none;" href="../Multimedia/index.html#wideo">zajrzyj tutaj!</a></p>
+      
+   </div>
+  
+  </div>
+<!-- koniec Pliki Video umieszczony na dysku -->
+<!-- Pliki Video osadzony z serwisu Youtube -->	
+  <div class="one"><h3>Pliki Video osadzony z serwisu Youtube </h3>
+   <div class="two" style="height: 840px;">
+     <br><br><p style="text-align: center;">By wstawić plik video znajdujący się na naszym dysku używamy poniższej składni:<br>
+      
+      <span class="tag">&lt;iframe  <span class="atrybut">width=<span class="green">""</span> height=<span class="green">""</span> src=<span class="green">"link"</span> frameborder=<span class="green">"0"</span><br> allow=<span class="green">"accelerometer; 
+         autoplay; encrypted-media; gyroscope; picture-in-picture"</span>allowfullscreen</span>&gt;<br> &lt;/iframe&gt;</span><br>
+        
+  </p>
+  <br>
+     <div class="half" >
+        <h4>Kod HTML</h4>
+        <div  class="halfin" style="padding-top: 25px; height: 400px; text-align: left;">
+      
+
+         <span class="tag">&lt;iframe  <span class="atrybut">width=<span class="green">"400"</span> height=<span class="green">"350"</span> src=<span class="green">"https://www.you<br>tube.com/embed<br>/oe1UOQK5blY"</span> frameborder=<span class="green">"0"</span> allow=<span class="green">"accelerometer; 
+         autoplay; encrypted-media; gyroscope; picture-in-picture"</span> allowfullscreen</span>&gt;&lt;/iframe&gt;</span>
+           
+        </div>
+        
+        </div>
+        <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style=" padding-top: 25px; height: 400px">
+         <iframe width="400" height="350" src="https://www.youtube.com/embed/oe1UOQK5blY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p style="text-align: center;">Jeżeli masz problem z umieszczeniem pliku <a target="prawa" style="color:coral;text-decoration: none;" href="../Multimedia/index.html#yt">zajrzyj tutaj!</a></p>
+      
+   </div>
+  
+  </div>
+<!-- koniec Pliki Video osadzony z serwisu Youtube -->	
+<!-- Pliki audio umieszczony na dysku -->		
+  <div class="one"><h3>Pliki audio umieszczony na dysku</h3>
+   <div class="two" style="height: 740px;">
+     <br><br><p style="text-align: center;">By wstawić plik audio znajdujący się na naszym dysku używamy poniższej składni:<br>
+      
+      <span class="tag">&lt;audio controls&gt;<br></span>
+      <span class="tag">&lt;source</span> <span class="atrybut">src=</span><span class="green">"ścieżka do pliku"</span> <span class="atrybut">type=</span><span class="green">"audio/mp3"</span><span class="tag">&gt;</span><br>
+     
+      
+      <span class="tag">&lt;/audio&gt;</span>
+        
+  </p>
+  <br>
+     <div class="half" >
+        <h4>Kod HTML</h4>
+        <div  class="halfin" style="padding-top: 25px; height: 300px; text-align: left;">
+      
+         <span class="tag">&lt;audio controls&gt;<br></span>
+         <span class="tag">&lt;source</span> <span class="atrybut">src=</span><span class="green">"../Multimedia/Multimedia/alok-love_again.mp3"</span> <span class="atrybut">type=</span><span class="green">"audio/mp3"</span><span class="tag">&gt;</span><br>
+        
+         
+         <span class="tag">&lt;/audio&gt;</span>
+        
+        </div>
+        
+        </div>
+        <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style=" padding-top: 25px; height: 300px">
+         <audio controls>
+            <source src="../Multimedia/Multimedia/alok-love_again.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p style="text-align: center;">Jeżeli masz problem z umieszczeniem pliku <a target="prawa" style="color:coral;text-decoration: none;" href="../Multimedia/index.html#audio_dysk">zajrzyj tutaj!</a></p>
+      
+   </div>
+  
+  </div>
+
+<!-- koniec Pliki audio umieszczony na dysku -->	
+<!-- Pliki audio umieszczony na dysku -->
+  <div class="one"><h3>Pliki audio umieszczony na dysku</h3>
+   <div class="two" style="height: 760px;">
+     <br><br><p style="text-align: center;">By wstawić plik audio znajdujący się na naszym dysku używamy poniższej składni:<br>
+      
+      <span class="tag">&lt;audio controls&gt;<br></span>
+      <span class="tag">&lt;source</span> <span class="atrybut">src=</span><span class="green">"link"</span> <span class="atrybut">type=</span><span class="green">"audio/mp3"</span><span class="tag">&gt;</span><br>
+     
+      
+      <span class="tag">&lt;/audio&gt;</span>
+        
+  </p>
+  <br>
+     <div class="half" >
+        <h4>Kod HTML</h4>
+        <div  class="halfin" style="padding-top: 25px; height: 300px; text-align: left;">
+      
+         <span class="tag">&lt;audio controls&gt;<br></span>
+         <span class="tag">&lt;source</span> <span class="atrybut">src=</span><span class="green">"http://wosp.msw-pttk.org.pl/<br>download/pozytywne<br>_myslenie.mp3"</span> <span class="atrybut">type=</span><span class="green">"audio/mp3"</span><span class="tag">&gt;</span><br>
+        
+         
+         <span class="tag">&lt;/audio&gt;</span>
+        
+        </div>
+        
+        </div>
+        <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style="padding-top: 25px; height: 300px">
+         <audio controls>
+            <source src="http://wosp.msw-pttk.org.pl/download/pozytywne_myslenie.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p style="text-align: center;">Jeżeli masz problem z umieszczeniem pliku <a target="prawa" style="color:coral;text-decoration: none;" href="../Multimedia/index.html#audio_zew">zajrzyj tutaj!</a></p>
+     
+   </div>
+  
+  </div>
+   <br><br><br>
+<!-- koniec Pliki audio umieszczony na dysku -->
+	<!-- script - nawigacja -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+ </body>
+</html>

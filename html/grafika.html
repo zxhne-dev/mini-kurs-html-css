@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+     rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="grafika.html">Grafika</a></div></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+<!-- grafika -->
+<div class="one"><h3>Grafika</h3><br>
+ <div class="two" style="height: 3260px;">
+   <br><br><p style="text-align: center;">By uatrakcyjnić wygląd naszej witryny możemy wstawić na nią obrazy.<br><br>
+   Do tego posłuży nam znacznik <span class="tag">&lt;img /&gt;</span>, jest to jeden z niewielu tagów, który nie wymaga drugiego zamykającego odpowiednika, dlatego czasem nazywany jest samozamykającym.<br><br>
+   Jednak sam znacznik nie da nam kompletnie nic, potrzebujemy do tego atrybutu <span class="atrybut">src</span> <i>(source - źródło)</i>, a 
+   jako <span class="green">wartość</span> tego atrybutu musimy podać <b>link</b> <i>(jeżeli plik graficzny nie znajduje się na naszym serwerze/komputerze)</i> albo <b>ścieżkę </b>
+   <i>(gdy plik znajduje się na naszym serwerze/komputerze)</i>.
+</p>
+<br><br>
+   <div class="half" >
+      <h4>Kod HTML</h4>
+      <div  class="halfin" style="padding-top: 25px; height: 250px; text-align: left;">
+         <span class="tag">&lt;img</span> <span class="atrybut">src=</span><span class="green">"../img/wakacje.png" </span> <span class="tag">/&gt;</span>
+      </div>
+      
+      </div>
+      <div class="half">
+      <h4>Rezultat</h4>
+      <div class="halfin" style=" padding-top: 25px;height: 250px">
+     <img src="../img/wakacje.png" height="220px">
+      </div>
+      </div>
+
+      <br><br><p style="text-align: center;">Możemy zmienić rozmiar naszego obrazka stosując atrybuty <span class="atrybut">height</span> (wysokość) oraz <span class="atrybut">width</span> (szerokość).
+      <br>Ustawiając samą wysokość, szerokość ustawi się sama proporcjonalnie (działa to również w drugą stronę).</p>
+      <br>
+         <div class="half">
+            <h4>Kod HTML</h4>
+            <div  class="halfin" style="padding-top: 25px; height: 250px; text-align: left;">
+               <span class="tag">&lt;img</span> <span class="atrybut">src=</span><span class="green">"../img/wakacje.png" </span> <span class="tag"><br>
+                  <span class="atrybut">height=<span class="green">"190px"</span></span>
+                  
+                  <br>/&gt;</span>
+            </div>
+            
+            </div>
+            <div class="half">
+            <h4>Rezultat</h4>
+            <div class="halfin" style=" padding-top: 25px;height: 250px">
+           <img src="../img/wakacje.png" height="190px">
+            </div>
+            </div>
+            <br><br><p style="text-align: center;">Możemy również samemu ustawić wysokość i szerokość jednocześnie, lecz musimy wtedy się spodziewać straty jakości, i/lub zniekształcenia (efekt, jak w „krzywym zwierciadle”). </p>
+               <br>
+                  <div class="half">
+                     <h4>Kod HTML</h4>
+                     <div  class="halfin" style="padding-top: 25px; height: 250px; text-align: left;">
+                        <span class="tag">&lt;img</span> <span class="atrybut">src=</span><span class="green">"../img/wakacje.png" </span> <span class="tag"><br>
+                           <span class="atrybut">height=<span class="green">"190px"</span><br>
+                           width=<span class="green">"100px"</span>
+                        </span>
+                           
+                           <br>/&gt;</span>
+                     </div>
+                     
+                     </div>
+                     <div class="half">
+                     <h4>Rezultat</h4>
+                     <div class="halfin" style=" padding-top: 25px;height: 250px">
+                    <img src="../img/wakacje.png" height="190px" width="100px">
+                     </div>
+                     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                     <br><br><p style="text-align: center;">Warto do naszej grafiki dodać również dwa inne atrybuty, a dokładnie są to <span class="atrybut">title</span> oraz <span class="atrybut">alt</span>.
+                     <br>
+                     <span class="atrybut">Title</span> to atrybut nadający tytuł naszemu obrazkowi. Wartość tego atrybutu jest wyświetlana po najechaniu kursorem na obrazek.<br>
+                     <span class="atrybut">Alt</span> to atrybut spełniający swoją funkcję, gdy wystąpi błąd na naszej stronie i grafika nie zostanie załadowana. Wtedy wartość tego atrybutu zostanie wyświetlona zamiast grafiki.
+                     
+                     </p>
+                     <br>
+                        <div class="half">
+                           <h4>Kod HTML</h4>
+                           <div  class="halfin" style="padding-top: 25px; height: 250px; text-align: left;">
+                              <span class="tag">&lt;img</span> <span class="atrybut">src=</span><span class="green">"../img/wakacje.png" </span> <span class="tag"><br>
+                                 <span class="atrybut">height=<span class="green">"190px"</span><br>
+                               
+                                 alt=<span class="green">"Grafika"</span><br>
+                                  title=<span class="green">"Wakacje"</span>
+                              </span>
+                                 
+                                 <br>/&gt;</span>
+                           </div>
+                           
+                           </div>
+                           <div class="half">
+                           <h4>Rezultat</h4>
+                           <div class="halfin" style="padding-top: 25px;height: 250px">
+                          <img src="../img/wakacje.png" height="190px" alt="Grafika" title="Wakacje">
+                           </div>
+                           </div>
+                           <div class="half">
+                              <h4>Kod HTML</h4>
+                              <div  class="halfin" style="padding-top: 25px; height: 250px; text-align: left;">
+                                 <span class="tag">&lt;img</span> <span class="atrybut">src=</span><span class="green">"zly/adres.png" </span> <span class="tag"><br>
+                                    <span class="atrybut">height=<span class="green">"190px"</span><br>
+                                   
+                                    alt=<span class="green">"Grafika"</span><br>
+                                     title=<span class="green">"Wakacje"</span>
+                                 </span>
+                                    
+                                    <br>/&gt;</span>
+                              </div>
+                              
+                              </div>
+                              <div class="half">
+                              <h4>Rezultat</h4>
+                              <div class="halfin" style=" padding-top: 25px;height: 250px">
+                             <img src="zly/adres.png" height="190px" alt="Grafika" title="Ez">
+                              </div>
+                              </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                              <p style="text-align: center;">Obraz wstawiony z linku.</p><br><br>
+                              <div class="half">
+                                 <h4>Kod HTML</h4>
+                                 <div  class="halfin" style="padding-top: 25px; height: 300px; text-align: left;">
+                                    <span class="tag">&lt;img</span> <span class="atrybut">src=</span><span class="green">"https://www.stickpng.com<br>/assets/images/580b57fbd9996e<br>24bc43c092.png" </span> <span class="tag"><br>
+                                       <span class="atrybut">height=<span class="green">"190px"</span><br>
+                                      
+                                       alt=<span class="green">"kufel"</span><br>
+                                        title=<span class="green">"Piwo to moje paliwo"</span>
+                                    </span>
+                                       
+                                       <br>/&gt;</span>
+                                 </div>
+                                 
+                                 </div>
+                                 <div class="half">
+                                 <h4>Rezultat</h4>
+                                 <div class="halfin" style=" padding-top: 25px;height: 300px">
+                                <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43c092.png" height="190px" alt="kufel" title="Piwo to moje paliwo">
+                                 </div>
+                                 </div>
+ </div>
+
+</div>
+
+
+
+
+	</div>
+	<!-- koniec grafika -->
+	<!-- script - nawigacja -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+ </body>
+</html>

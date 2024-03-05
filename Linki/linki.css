@@ -1,0 +1,65 @@
+body{
+    font-family: 'Ubuntu'; 
+    color: white;
+    background-color: antiquewhite;
+}
+      
+.tabela{
+    width: 90.27777777777777vw;
+
+}
+      
+.lp{
+    height: 6.337135614702155vh;
+    width: 3.4722222222222223vw;
+    text-align: center;
+    font-size: 1.7361111111111112vw;
+}
+      
+.logo{
+    height: 6.337135614702155vh;
+    width: 3.4722222222222223vw;
+}
+      
+.nazwa{
+    height: 6.337135614702155vh;
+    width: 20.833333333333332vw;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5277777777777777vw;
+}
+      
+.opis{
+    height: 6.337135614702155vh;
+    width: 41.666666666666664vw;
+    text-align: center;
+}
+      
+.link{
+    height: 6.337135614702155vh;
+    text-align: center;
+}
+      
+.logo img{
+    width: 3.4722222222222223vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+      
+.kolor1{
+    background-color: #172b83;
+}
+      
+.kolor2{
+    background-color:  #351c63;
+}
+      
+a{
+    color: white;
+    font-size: 2.0833333333333335vw;
+    text-decoration: none;
+}
+
+tr:hover{
+    background-color: #010042;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwestionariusz osobowy</title>
+    <link rel="stylesheet" href="styles/kwestionariusz.css">
+</head>
+<body>
+    <div id="navbar">
+        <a id="main" href="main.html">Strona główna</a>
+        <a href="quizy.html">Quizy</a>
+        <a href="kwestionariusz.html">Kwestionariusz osobowy</a>
+    </div>
+<div id="kontener">
+    <h1>Kwestionariusz osobowy</h1>
+    <form>
+        <div class="row">
+            <div class="col">
+                <fieldset>
+                    <legend class="legend_center">Informacje osobowe</legend>
+                    <fieldset class="first">
+                        <legend>Wykształcenie</legend>
+                        <p>Jakie jest twoje wykształcenie?
+                        <br>
+                        <input type="radio" id="podstawowe" class="answer" name="szkola">
+                        <label for="podstawowe" class="answer">Podstawowe</label> 
+                        <br>
+                        <input type="radio" id="gimba" class="answer" name="szkola">
+                        <label for="gimba" class="answer">Gimnazjalne</label> 
+                        <br>
+                        <input type="radio" id="zas_zaw" class="answer" name="szkola">
+                        <label for="zas_zaw" class="answer">Zasadnicze Zawodowe</label> 
+                        <br>
+                        <input type="radio" id="zas_bran" class="answer" name="szkola">
+                        <label for="zas_bran" class="answer">Zasadnicze Branżowe</label>  
+                        <br>
+                        <input type="radio" id="srednie_bran" class="answer" name="szkola">
+                        <label for="srednie_bran" class="answer">Średnie Branżowe</label> 
+                        <br>
+                        <input type="radio" id="srednie" class="answer" name="szkola">
+                        <label for="srednie" class="answer">Średnie</label> 
+                        <br>
+                        <input type="radio" id="wyzsze" class="answer" name="szkola">
+                        <label for="wyzsze" class="answer">Wyższe</label> 
+                        </p>
+                        <p>
+                        W jakim wieku zdobyłeś zaznaczony powyżej stopień wykształcenia?
+                        <br>
+                        <input type="number" min="10" max="75">
+                        </p>
+                    </fieldset>
+                    <fieldset class="mid">
+                        <legend>Branża</legend>
+                        <p>W jakiej branży jesteś zatrudniony/a?
+                        <br>
+                        <select class="branza" size="7">
+                            <option value="Fryzjersko-kosmetyczna">Fryzjersko-kosmetyczna</option>
+                            <option value="Artystyczno-medialna">Artystyczno-medialna</option>
+                            <option value="Skórzano-obuwnicza">Skórzano-obuwnicza</option>
+                            <option value="Włókienniczo-odzieżowa">Włókienniczo-odzieżowa</option>
+                            <option value="Transportowo-spedycyjno-logistyczna">Transportowo-spedycyjno-logistyczna</option>
+                            <option value="Ekonomiczno-administracyjno-biurowa">Ekonomiczno-administracyjno-biurowa</option>
+                            <option value="Poligraficzno-fotograficzna">Poligraficzno-fotograficzna</option>
+                            <option value="Leśno-ogrodnicza">Leśno-ogrodnicza</option>
+                            <option value="Rolno-hodowlana">Rolno-hodowlana</option>
+                            <option value="Drzewno-meblarska">Drzewno-meblarska</option>
+                            <option value="Chemiczno- ceramiczno-szklarska">Chemiczno-ceramiczno-szklarska</option>
+                            <option value="Ochrona zdrowia">Ochrona zdrowia</option>
+                            <option value="Pomoc społeczna">Pomoc społeczna</option>
+                            <option value="Ochrona i bezpieczeństwo">Ochrona i bezpieczeństwo</option>
+                            <option value="Hotelarska">Hotelarska</option>
+                            <option value="Gastronomiczna">Gastronomiczna</option>
+                            <option value="Turystyczna">Turystyczna</option>
+                            <option value="Spożywcza">Spożywcza</option>
+                            <option value="Teleinformatyczna">Teleinformatyczna</option>
+                            <option value="Elektryczno-elektroniczna">Elektryczno-elektroniczna</option>
+                            <option value="Energetyczna">Energetyczna</option>
+                            <option value="Mechaniczna – budowa maszyn">Mechaniczna – budowa maszyn</option>
+                            <option value="Mechaniczna - mechanika precyzyjna">Mechaniczna - mechanika precyzyjna</option>
+                            <option value="Obróbka metali i tworzyw sztucznych">Oobróbka metali i tworzyw sztucznych</option>
+                            <option value="Motoryzacyjna">Motoryzacyjna</option>
+                            <option value="Górniczo-wiertnicza">Górniczo-wiertnicza</option>
+                            <option value="Hutniczo-odlewnicza">Hutniczo-odlewnicza</option>
+                            <option value="Drogowa">Drogowa</option>
+                            <option value="Inżynieryjno-instalacyjna">Inżynieryjno-instalacyjna</option>
+                            <option value="Budowlana">Budowlana</option>
+                            <option value="bezrobotny">Jestem bezrobotny</option>
+                            <option value="emerytura">Jestem na emeryturze</option>
+                            <option value="renta">Jestem rencistą</option>
+                            <option value="zadna">Żadna z powyższych</option>
+                        </select>
+                        </p>
+                        <p>W jakich branżach zatrudnieni są członkowie twojej rodziny?<br><i>(Aby zaznaczyć kilka opcji przytrzymaj klawisz Ctrl)</i>
+                        <br>
+                        <select class="branza" size="7" multiple="multiple">
+                            <option value="Fryzjersko-kosmetyczna">Fryzjersko-kosmetyczna</option>
+                            <option value="Artystyczno-medialna">Artystyczno-medialna</option>
+                            <option value="Skórzano-obuwnicza">Skórzano-obuwnicza</option>
+                            <option value="Włókienniczo-odzieżowa">Włókienniczo-odzieżowa</option>
+                            <option value="Transportowo-spedycyjno-logistyczna">Transportowo-spedycyjno-logistyczna</option>
+                            <option value="Ekonomiczno-administracyjno-biurowa">Ekonomiczno-administracyjno-biurowa</option>
+                            <option value="Poligraficzno-fotograficzna">Poligraficzno-fotograficzna</option>
+                            <option value="Leśno-ogrodnicza">Leśno-ogrodnicza</option>
+                            <option value="Rolno-hodowlana">Rolno-hodowlana</option>
+                            <option value="Drzewno-meblarska">Drzewno-meblarska</option>
+                            <option value="Chemiczno- ceramiczno-szklarska">Chemiczno-ceramiczno-szklarska</option>
+                            <option value="Ochrona zdrowia">Ochrona zdrowia</option>
+                            <option value="Pomoc społeczna">Pomoc społeczna</option>
+                            <option value="Ochrona i bezpieczeństwo">Ochrona i bezpieczeństwo</option>
+                            <option value="Hotelarska">Hotelarska</option>
+                            <option value="Gastronomiczna">Gastronomiczna</option>
+                            <option value="Turystyczna">Turystyczna</option>
+                            <option value="Spożywcza">Spożywcza</option>
+                            <option value="Teleinformatyczna">Teleinformatyczna</option>
+                            <option value="Elektryczno-elektroniczna">Elektryczno-elektroniczna</option>
+                            <option value="Energetyczna">Energetyczna</option>
+                            <option value="Mechaniczna – budowa maszyn">Mechaniczna – budowa maszyn</option>
+                            <option value="Mechaniczna - mechanika precyzyjna">Mechaniczna - mechanika precyzyjna</option>
+                            <option value="Obróbka metali i tworzyw sztucznych">Oobróbka metali i tworzyw sztucznych</option>
+                            <option value="Motoryzacyjna">Motoryzacyjna</option>
+                            <option value="Górniczo-wiertnicza">Górniczo-wiertnicza</option>
+                            <option value="Hutniczo-odlewnicza">Hutniczo-odlewnicza</option>
+                            <option value="Drogowa">Drogowa</option>
+                            <option value="Inżynieryjno-instalacyjna">Inżynieryjno-instalacyjna</option>
+                            <option value="Budowlana">Budowlana</option>
+                            <option value="zadna">Żadna z powyższych</option>
+                        </select>
+                        </p>
+                    </fieldset>
+                </fieldset>
+            </div>
+            <div class="col">
+                <fieldset>
+                    <legend class="legend_center">Preferencje</legend>
+                    <fieldset class="first">
+                        <legend>Upodobania</legend>
+                        <p>Jaki jest twój ulubiony gatunek muzyczny?
+                        <br>
+                        <select class="muzyka" size="8">
+                            <option value="pop">Muzyka pop</option>
+                            <option value="rap">Rap</option>
+                            <option value="hip-hop">Hip-Hop</option>
+                            <option value="rock">Rock</option>
+                            <option value="klasyczna">Muzyka klasyczna</option>
+                            <option value="disco polo">Disco Polo</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="heavy metal">Heavy Metal</option>
+                            <option value="reggae">Reggae</option>
+                            <optgroup label="EDM">
+                                <option value="Slap House">Slap House</option>
+                                <option value="Dubstep">Dubstep</option>
+                                <option value="Melodic Dubstep">Melodic Dubstep</option>
+                                <option value="big room">Big Room House</option>
+                                <option value="Drum & Bass">Drum & Bass</option>
+                                <option value="Future Bounce">Future Bounce</option>
+                                <option value="Future House">Future House</option>
+                                <option value="Future Bass">Future Bass</option>
+                                <option value="Future Rave">Future Rave</option>
+                                <option value="Glitch Hop">Glitch Hop</option>
+                                <option value="Hard Bass">Hard Bass</option>
+                                <option value="Trap">Trap</option>
+                                <option value="Lo-fi">Lo-fi</option>
+                                <option value="Hardstyle">Hardstyle</option>
+                                <option value="Kawaii Slap House">Kawaii Slap House</option>
+                            </optgroup>
+                            <option value="no">Żaden z powyższych</option>
+                        </select>
+                        </p>
+                        <p>Jaki jest twój ulubiony kolor?<br>
+                        <input type="color">
+                        </p>  
+                    </fieldset>
+                    <fieldset class="mid">
+                        <legend>Gry</legend>
+                        <p>Na jakich urządzeniach grasz?
+                        <br>
+                        <input type="checkbox" id="android" class="answer">
+                        <label for="android" class="answer">Telefon Android</label> 
+                        <br>
+                        <input type="checkbox" id="IOS" class="answer">
+                        <label for="IOS" class="answer">Telefon IOS</label> 
+                        <br>
+                        <input type="checkbox" id="PC" class="answer">
+                        <label for="PC" class="answer">PC</label> 
+                        <br>
+                        <input type="checkbox" id="Mac" class="answer">
+                        <label for="Mac" class="answer">Komputer Mac</label> 
+                        <br>
+                        <input type="checkbox" id="PS" class="answer">
+                        <label for="PS" class="answer">PlayStation</label> 
+                        <br>
+                        <input type="checkbox" id="xbox" class="answer">
+                        <label for="xbox" class="answer">XBOX</label> 
+                        </p>
+                        <p>W jakie z wymienionych gier kiedykolwiek grałeś?<br><i>(Aby zaznaczyć kilka opcji przytrzymaj klawisz Ctrl)</i>
+                            <br>
+                            <select class="gry" size="6" multiple="multiple">
+                                <option value="Counter Strike: Global Ofensive">Counter Strike: Global Ofensive</option>
+                                <option value="League of Legends">League of Legends</option>
+                                <option value="Valorant">Valorant</option>
+                                <option value="DOTA 2">DOTA 2</option>
+                                <option value="Wiedźmin 3: Dziki Gon">Wiedźmin 3: Dziki Gon</option>
+                                <option value="Horizon Zero Down">Horizon Zero Down</option>
+                                <option value="Fortnite">Fortnite</option>
+                                <option value="PUBG">PUBG</option>
+                                <option value="Minecraft">Minecraft</option>
+                                <option value="Forza Horizon 4">Forza Horizon 4</option>
+                                <option value="Grand Theft Auto V">Grand Theft Auto V</option>
+                                <option value="Apex Legends">Apex Legends</option>
+                                <option value="Battlefield 1">Battlefield 1</option>
+                                <option value="Call of Duty Warzone">Call of Duty Warzone</option>
+                                <option value="Cyberpunk 2077">Cyberpunk 2077</option>
+                                <option value="Dead by Daylight">Dead by Daylight</option>
+                                <option value="FIFA">FIFA</option>
+                                <option value="Rainbow Six: Siege">Rainbow Six: Siege</option>
+                                <option value="Red Dead Redemption 2">Red Dead Redemption 2</option>
+                                <option value="ROBLOX">ROBLOX</option>
+                                <option value="Rocket League">Rocket League</option>
+                                <option value="Star Wars: Battlefront 2">Star Wars: Battlefront 2</option>
+                                <option value="The Sims 4">The Sims 4</option>
+                                <option value="Tomb Raider">Tomb Raider</option>
+                                <option value="World of Tanks">World of Tanks</option>
+                                <option value="World of Warcraft">World of Warcraft</option>
+                                <option value="no">Żadna z powyższych</option>
+                            </select>
+                            </p>
+                        <p>
+                        Ile godzin dziennie przeznaczasz na granie?
+                        <br>
+                        <input type="number" max="16" min="0"> 
+                        </p>
+                    </fieldset>
+                </fieldset>
+            </div>
+        </div>
+        <fieldset>
+            <legend class="legend_center">Życie społeczne</legend>
+            <div class="full">
+                <div class="col">
+                    <fieldset class="last">
+                        <legend>Polityka</legend>
+                        <p>Jakie partie polityczne popierasz?
+                        <br>
+                        <input type="checkbox" id="PiS" class="answer">
+                        <label for="PiS" class="answer">Prawo i Sprawiedliwość</label> 
+                        <br>
+                        <input type="checkbox" id="PO" class="answer">
+                        <label for="PO" class="answer">Platforma Obywatelska</label> 
+                        <br>
+                        <input type="checkbox" id="NL" class="answer">
+                        <label for="NL" class="answer">Nowa Lewica</label> 
+                        <br>
+                        <input type="checkbox" id="PSL" class="answer">
+                        <label for="PSL" class="answer">Polskie Stronnictwo Ludowe</label> 
+                        <br>
+                        <input type="checkbox" id="Konfederacja" class="answer">
+                        <label for="Konfederacja" class="answer">Konfederacja Wolność i Niepodległość</label> 
+                        <br>
+                        <input type="checkbox" id="PL2050" class="answer">
+                        <label for="PL2050" class="answer">Polska 2050 Sz. Hołowni</label> 
+                        <br>
+                        <input type="checkbox" id="inna" class="answer">
+                        <label for="inna" class="answer">Inna, jaka?</label>
+                        <br>
+                        <input type="text">
+                        </p>
+                        <p>Co zmieniłbyś w Polskim rządzie?<br>
+                        <textarea placeholder="np. partię rządzącą"></textarea>
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="col">
+                    <fieldset class="last">
+                        <legend>Rodzina</legend>
+                        <p>Czy jesteś w związku z drugą osobą?<br>
+                        <input type="radio" id="tak" class="answer" name="związek">
+                        <label for="tak" class="answer">Tak</label> 
+                        <br>
+                        <input type="radio" id="nie" class="answer" name="związek">
+                        <label for="nie" class="answer">Nie</label> 
+                        <br>
+                        <input type="radio" id="complicated" class="answer" name="związek">
+                        <label for="complicated" class="answer">To skomplikowane</label> 
+                        </p>
+                        <p>Jak ocenia Pani/Pan swoje relacje z partnerką/rem?<br>
+                        <input type="radio" id="b_zle" class="answer" name="relacje">
+                        <label for="b_zle" class="answer">Bardzo źle</label> 
+                        <br>
+                        <input type="radio" id="zle" class="answer" name="relacje">
+                        <label for="zle" class="answer">Źle</label> 
+                        <br>
+                        <input type="radio" id="dobrze" class="answer" name="relacje">
+                        <label for="dobrze" class="answer">Dobrze</label> 
+                        <br>
+                        <input type="radio" id="b_dobrze" class="answer" name="relacje">
+                        <label for="b_dobrze" class="answer">Bardzo dobrze</label>
+                        <br>
+                        <input type="radio" id="nw" class="answer" name="relacje">
+                        <label for="nw" class="answer">Nie mam zdania</label> 
+                        <br>
+                        <input type="radio" id="nie_mam" class="answer" name="relacje">
+                        <label for="nie_mam" class="answer">Nie posiadam partnerki/a</label> 
+                        </p>
+                        <p>
+                        Ile posiada Pan/Pani dzieci?<br>
+                        <input type="radio" id="1" class="answer" name="dzieci">
+                        <label for="1" class="answer">1</label> 
+                        <br>
+                        <input type="radio" id="2" class="answer" name="dzieci">
+                        <label for="2" class="answer">2</label> 
+                        <br>
+                        <input type="radio" id="3" class="answer" name="dzieci">
+                        <label for="3" class="answer">3</label> 
+                        <br>
+                        <input type="radio" id="more" class="answer" name="dzieci">
+                        <label for="more" class="answer">Więcej</label>
+                        <input type="number" min="4" id="ile" placeholder="Ile?"> 
+                        <br>
+                        <input type="radio" id="havent" class="answer" name="dzieci">
+                        <label for="havent" class="answer">Nie posiadam</label> 
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+        </fieldset>
+        <div class="button">
+        <input type="submit" id="btn" value="Prześlij">
+        <input type="reset" id="btn" value="Wyczyść">
+        <input type="button" id="btn" value="Kliknij po więcej ankiet" onclick="alert('Brak nowych ankiet')">
+        </div>
+    </form>
+</div>
+<div class="footer">
+    Autor: &copy; Bartosz Piasecki 3K
+</div>
+</body>
+</html>

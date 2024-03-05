@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+	  <style>
+	.listazakupow
+	{
+		
+	
+	color:white;
+	margin: 0px;
+	text-shadow: none;
+	padding: 0px;
+	
+	
+	
+	}
+	
+	</style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="listy.html">Listy</a></div></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+<!-- listy -->
+<div class="one"><h3>Listy</h3>
+ <div class="two">
+<br><br>
+    <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> Do grupowania treści w html’u używamy list. Listy
+        w języku html są zbliżone do tych list, których używamy na co dzień, 
+        zapisując np. listę zakupów. Dane umieszczane w listach są wypunktowane 
+        i mogą być uporządkowane, bądź luźno wymienione. 
+       Ten podział ma również odzwierciedlenie w podziale tych list.</p>
+ </div>
+
+</div>
+<!-- koniec listy -->
+<!-- listy uporządkowane -->
+<div class="one" ><h3>Listy uporządkowane</h3>
+   <div class="two" style="height: 1550px;">
+  <br><br>
+      <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> 
+         Listy uporządkowane w języku html to takie, których elementy posiadają pewną numerację,
+          stąd też zwyczajowa nazwa lista numerowana. 
+         Numeracje w tych listach możemy uzyskać poprzez cyfry, bądź litery.
+         <br><br>
+         Listy uporządkowane tworzymy przy pomocy znacznika <span class="tag">&lt;ol&gt;&lt;/ol&gt;</span>.
+         <br><br>
+         W celu stworzenia listy uporządkowanej potrzebujemy podpunktów, które tworzymy poprzez wpisanie tekstu pomiędzy tagi<br> <span class="atrybut">&lt;li&gt;&lt;/li&gt;</span>.
+      </p><br><br><br><br>
+      <div class="half">
+         <h4>Kod HTML</h4>
+         <div  class="halfin" style="padding-top: 35px; height: 170px; text-align: left;">
+            <span class="tag"> &lt;ol&gt; </span><br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Mleko<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Ser<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Chleb<span class="atrybut">&lt;/li&gt; </span> <br>
+           <span class="tag">&lt;/ol&gt; </span> <br>
+         </div>
+      </div>
+      <div class="half">
+         <h4>Rezultat</h4>
+         <div class="halfin" style=" padding-top: 25px;height: 170px; text-align: left;"><ol>
+            <li>Mleko</li>
+            <li>Ser</li>
+            <li>Chleb</li>
+           </ol></div>
+      </div>
+      <div style="clear:both;"></div>
+      <br><br><br>
+      <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Element
+     <span class="tag"> &lt;ol&gt;</span> wskazuje jedynie na rodzaj listy. Wszystkie
+       elementy listy muszą się znaleźć pomiędzy znacznikami <span class="atrybut">&lt;li&gt;</span> 
+       oraz  <span class="atrybut">&lt;/li&gt;</span>. <br><br>
+      Możemy zmienić wygląd numeracji poprzez dodanie atrybutu <span class="atrybut">type</span> wraz z odpowiednią wartością. <br><br>
+		  
+		Gdy jako wartość ustawimy "A" podpunkty listy będą numerowane wielkimi literami alfabetu (A, B, C, D, E, F...) <br>
+		Gdy jako wartość ustawimy "a" podpunkty listy będą numerowane małymi literami alfabetu (a, b, c, d, e, f...) <br>
+		Gdy jako wartość ustawimy "I" podpunkty listy będą numerowane cyframi rzymskimi (I, II, III, IV, V, VI...) <br><br><br>
+		  Możemy rozpocząć numerowanie od dowolnej litery lub liczby. By to zrobić musimy dodać atrybut <span class="atrybut">start</span>, a jako wartość ustawić numer pierwszego podpunku.(gdy np. ustawimy start="5" lista rozpocznie się od liczby 5/litery E/litery e)
+      </p>
+	
+	<br><br>
+	      <div class="half">
+         <h4>Kod HTML</h4>
+         <div  class="halfin" style="padding-top: 35px; height: 170px; text-align: left;">
+          <span class="tag">&lt;ol <span class="atrybut">type="<span class="green">a</span>" start="<span class="green">3</span>"</span>&gt;</span>
+			 
+			 
+			 </span><br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Mleko<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Ser<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Chleb<span class="atrybut">&lt;/li&gt; </span> <br>
+           <span class="tag">&lt;/ol&gt; </span> <br>
+         </div>
+      </div>
+      <div class="half">
+         <h4>Rezultat</h4>
+         <div  class="halfin" style=" padding-top: 25px;height: 170px; text-align: left;"><ol type="a" start="3">
+            <li>Mleko</li>
+            <li>Ser</li>
+            <li>Chleb</li>
+           </ol></div>
+      </div>
+      <div style="clear:both;"></div>
+	
+	
+	</div>
+   </div>
+<!-- koniec listy uporządkowane -->
+<!-- listy nieuporządkowane -->
+<div class="one" ><h3>Listy nieuporządkowane</h3>
+   <div class="two" style="height: 900px;">
+  <br><br>
+      <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> Drugim rodzajem listy 
+         w języku html, jest lista nieuporządkowana, zwana też listą wypunktowaną. Elementy tej listy nie są numerowane, 
+         a luźno wymienione po tzw. myślnikach. Domyślnie rolę tych myślników przejmują kropki.
+         <br><br>
+         Listy nieuporządkowane tworzymy przy pomocy znacznika <span class="tag">&lt;ul&gt;&lt;/ul&gt;</span>.
+         <br><br>
+         Tak jak w liście uporządkowanej elementy listy również tworzymy poprzez tagi  <span class="atrybut">&lt;li&gt;&lt;/li&gt;</span>.
+      </p><br><br><br><br>
+      <div class="half">
+         <h4>Kod HTML</h4>
+         <div  class="halfin" style="padding-top: 35px; height: 170px; text-align: left;">
+            <span class="tag"> &lt;ul&gt; </span><br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Mleko<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Ser<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Chleb<span class="atrybut">&lt;/li&gt; </span> <br>
+           <span class="tag">&lt;/ul&gt; </span> <br>
+         </div>
+      </div>
+      <div class="half">
+         <h4>Rezultat</h4>
+         <div class="halfin" style=" padding-top: 25px;height: 170px; text-align: left;"><br><ul>
+            <li>Mleko</li>
+            <li>Ser</li>
+            <li>Chleb</li>
+           </ul></div>
+      </div>
+      <div style="clear:both;"></div>
+      <br><br><br>
+	      <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;">Podobnie jak w listach numerowanych, możemy zmienić wygląd numeracji. <br> Gdy jako wartość atrybutu ustawimy <span class="green">disk</span> przed podpunktem zobaczymy taki znaczek: ○.
+			  <br> Gdy jako wartość atrybutu ustawimy <span class="green">circle</span> przed podpunktem zobaczymy taki znaczek: ●.<br>Natomiast gdy jako wartość atrybutu ustawimy <span class="green">square</span> przed podpunktem zobaczymy taki znaczek: ■.
+      </p>
+    </div>
+   </div>
+<!-- koniec listy nieuporządkowane -->
+<!-- nadawanie tytułów listom -->
+<div class="one" ><h3>Nadawanie tytułów listom</h3>
+   <div class="two" style="height: 750px;">
+  <br><br>
+      <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> 
+         W celu dobrania odpowiedniego nagłówka, będziemy musieli się zastanowić jak istotna jest nasza lista dla całości artykuły. Pamiętajmy jedynie, że nagłówek 
+         <span class="tag">&lt;h1&gt;&lt;/h1&gt;</span> zarezerwowany jest dla tytułu całego artykułu,
+          także starajmy się raczej korzystać z nagłówków niższego rzędu.
+         
+      </p><br><br><br><br>
+      <div class="half">
+         <h4>Kod HTML</h4>
+         <div  class="halfin" style="padding-top: 35px; height: 240px; text-align: left;">
+            <p style="margin-top: -70px; margin-bottom: -60px;"><span class="tag">&lt;h2&gt;</span>Lista zakupów  <span class="tag">&lt;/h2&gt;</span></p><br>
+            <span class="tag"> &lt;ol&gt; </span><br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Mleko<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Ser<span class="atrybut">&lt;/li&gt;</span>  <br>
+           &nbsp;&nbsp;&nbsp; <span class="atrybut">&lt;li&gt;</span>Chleb<span class="atrybut">&lt;/li&gt; </span> <br>
+           <span class="tag">&lt;/ol&gt; </span> <br>
+         </div>
+      </div>
+      <div class="half">
+         <h4>Rezultat</h4>
+         
+         <div class="halfin" style=" padding-top: 25px;height: 240px; text-align: left;">
+            <h2 class="lista">Lista zakupów</h2>
+            <ol>
+            <li>Mleko</li>
+            <li>Ser</li>
+            <li>Chleb</li>
+           </ol></div>
+      </div>
+      <div style="clear:both;"></div>
+      <br><br><br>
+    </div>
+   </div>
+<!-- koniec nadawanie tytułów listom -->
+<!-- listy zagnieżdżone -->
+<div class="one" ><h3>Listy zagnieżdżone</h3>
+   <div class="two" style="height: 1750px;">
+  <br><br>
+      <p style="padding-left: 30px;padding-right: 30px; text-align: center; font-size: 30px;"> Listy zagnieżdżone to w najprostszy sposób mówiąc, listy będące cześcią innej listy.
+         <br>Stosujemy je, gdy chcemy rozwinąć dany podpunkt naszej listy o inne pomniejsze podpunkty.
+         
+      </p><br><br><br><br>
+      <div class="half">
+         <h4>Kod HTML</h4>
+         <div  class="halfin" style="padding-top: 35px; height: 1350px; text-align: left;">
+            
+			 
+			 
+			 <span class="tag">&lt;h2&gt;</span>Lista zakupów <span class="tag">&lt;/h2&gt;</span>
+            <br><br>
+	<span class="tag"> &lt;ol&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>Mleko <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>Ser <span class="tag"> &lt;/li&gt; </span><br>
+			 <span class="tag">&lt;ol <span class="atrybut">type="<span class="green">a</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>biały<br>
+			 <span class="tag">&lt;ul <span class="atrybut">type="<span class="green">disk</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>chudy <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>półtłusty <span class="tag"> &lt;/li&gt; </span><br>
+	 <span class="tag"> &lt;li&gt; </span>tłusty <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>żółty<br>
+			 <span class="tag">&lt;ul <span class="atrybut">type="<span class="green">disc</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>zwykły <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>wędzony <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;/ol&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>Chleb <span class="tag"> &lt;/li&gt; </span><br>
+			 <span class="tag">&lt;ol <span class="atrybut">type="<span class="green">a</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>pszenny<br>
+			 <span class="tag">&lt;ul <span class="atrybut">type="<span class="green">disc</span>"</span>&gt;</span><br>
+  <span class="tag"> &lt;li&gt; </span>biały <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>razowy
+			 <span class="tag">&lt;ul <span class="atrybut">type="<span class="green">circle</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>graham <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>żytni
+			 <span class="tag">&lt;ul <span class="atrybut">type="<span class="green">disk</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>razowy <br>
+	<span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>mieszany<br>
+			 <span class="tag">&lt;ul  <span class="atrybut">type="<span class="green">disk</span>"</span>&gt;</span><br>
+ <span class="tag"> &lt;li&gt; </span>razowy <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;/ol&gt; </span><br>
+ <span class="tag"> &lt;li&gt; </span>Wędlina <span class="tag"> &lt;/li&gt; </span><br>
+ <span class="tag"> &lt;/ul&gt; </span><br>
+ <span class="tag"> &lt;/ol&gt; </span><br>
+		  
+		  
+         </div>
+      </div>
+      <div class="half">
+         <h4>Rezultat</h4>
+         
+         <div class="halfin" style=" padding-top: 25px;height: 1350px; text-align: left; padding-left: 0px;">
+            <h2 class="lista">Lista zakupów</h2>
+            
+		  <ol>
+
+  <li>Mleko</li>
+
+    <li>Ser</li>
+
+      <ol type="a">
+
+        <li>biały
+
+          <ul class="listazakupow" type="disc">
+
+            <li>chudy</li>
+
+            <li>półtłusty</li>
+
+            <li>tłusty</li>
+
+          </ul>
+
+        <li>żółty
+
+          <ul class="listazakupow" type="disc">
+
+            <li>zwykły</li>
+
+            <li>wędzony</li>
+
+          </ul>
+
+        </ol>
+
+			  <li>Chleb</li>
+
+        <ol type="a">
+
+          <li>pszenny
+
+            <ul class="listazakupow" type="disc">
+
+              <li>biały</li>
+
+              <li>razowy
+
+                <ul class="listazakupow" type="circle">
+
+                <li>graham</li>
+
+              </ul>
+
+            </ul>
+
+          <li>żytni
+
+            <ul class="listazakupow" type="disc">
+
+            <li>razowy</li>
+
+          </ul>
+
+        <li>mieszany
+
+          <ul class="listazakupow" type="disc">
+
+          <li>razowy</li>
+
+        </ul>
+
+      </ol>
+
+    <li>Wędlina</li>
+
+  </ul>
+
+</ol>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  </div>
+      </div>
+      <div style="clear:both;"></div><br><br><br><br>
+	<p style="text-align: center;">Musimy pamiętać, by jedną listę umieścić w środku podpunktu listy znajdującej się wyżej w hierarchii (między tagai <span class="tag">&lt;li&gt;&lt;/li&gt;</span>).</p>
+      <br><br><br>
+    </div>
+   </div>
+  
+  </div>
+<br><br>
+
+
+
+<!-- koniec listy zagnieżdżone -->	
+<!-- script - nawigacja -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+ </body>
+</html>

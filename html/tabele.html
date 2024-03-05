@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="tabele.html">Tabele</a></div></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+	
+<div class="container">
+<!-- tabele -->	
+<div class="one"><h3>Tabele</h3>
+ <div class="two" style="height: 5100px;"><br><br><br>
+   <p style="text-align: center;">Tabele tworzymy poprzez użycie tagu <span class="tag">&lt;table&gt;&lt;/table&gt;</span>.</p><br>
+   <div class="half" >
+      <h4>Kod HTML</h4>
+      <div  class="halfin" style="padding-top: 25px; height: 200px; text-align: left;">
+         <span class="tag" >&lt;table&gt;<br><br>&lt;/table&gt;</span>
+    </div>
+   </div>
+   <div class="half">
+      <h4>Rezultat</h4>
+      <div class="halfin" style=" padding-top: 25px;height: 200px"><table></table></div>
+   </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <p style="text-align: center;">Aby zobaczyć rezultat stworzonej tabeli musimy dodać jej <span style="color:aquamarine">obrabowanie</span>
+    oraz <span style="color:indianred">wysokość</span> i <span style="color:gold">szerokość</span>.</p><br>
+	
+ 
+
+     <div class="half" >
+        <h4>Kod HTML</h4>
+        <div  class="halfin" style="padding-top: 25px; height: 480px; text-align: left;">
+           <span class="tag" >&lt;table <span style="color:aquamarine">border="2"</span><br>
+             <span style="color:dimgrey"> cellspacing="0"  <br>
+              cellpadding="0"</span>  <br>
+              <span style="color:indianred">height="150px" </span>
+              <br><span style="color:gold">width="300px"</span>&gt;<br><br>&lt;/table&gt;</span>
+      </div>
+      
+     </div>
+     <div class="half">
+        <h4>Rezultat</h4>
+        <div class="halfin" style=" padding-top: 25px;height: 480px"><table border="2" align="center" cellspacing="0" cellpadding="0" height="350px" width="300px"></table></div>
+       
+
+ </div>
+ <p style="text-align: center;"><span style="color:dimgrey"> cellspacing</span> oraz <span style="color:dimgrey">cellpadding </span> odpowiadają za odstępy między komórkami - lepiej je ustawić na poczatku tworzenia tabeli.
+  </p><br><br><br><br>
+  <p style="text-align: center;">Następnym krokiem jest stworzenie wierszy w tabeli. Tworzymy je za pomocą tagów <span class="atrybut">&lt;tr&gt;&lt;/tr&gt;</span>.</p>
+
+
+
+<div class="half" >
+   <h4>Kod HTML</h4>
+   <div  class="halfin" style="padding-top: 25px; height: 450px; text-align: left;">
+      <span class="tag" >&lt;table <span style="color:aquamarine">border="2"</span><br>
+        <span style="color:dimgrey"> cellspacing="0"  <br>
+         cellpadding="0"</span>  <br>
+         <span style="color:indianred">height="150px" </span>
+         <br><span style="color:gold">width="300px"</span>&gt;<br>
+         <span class="atrybut"> &lt;tr&gt;&lt;/tr&gt;<br>
+         &lt;tr&gt;&lt;/tr&gt;<br>
+&lt;tr&gt;&lt;/tr&gt;</span><br>
+<br>&lt;/table&gt;</span>
+ </div>
+ 
+</div>
+<div class="half">
+   <h4>Rezultat</h4>
+   <div class="halfin" style=" padding-top: 25px;height: 450px">
+<table border="2" align="center" cellspacing="0" cellpadding="0" height="350px" width="300px">
+<tr></tr>
+<tr></tr>
+<tr></tr>
+   </table></div>
+  
+
+</div>
+<p style="text-align: center;">Niestety nie widzimy zmian. Jest to spowodowane brakiem komórek w wierszach, dodajemy je za pomocą znaczników <br> <span class="green">&lt;td&gt;&lt;/td&gt;</span>. <br>Musimy pamiętać jednak by  wstawić je pomiędzy tagi tworzące wiersze.</p>
+
+
+
+<div class="half" >
+   <h4>Kod HTML</h4>
+   <div  class="halfin" style="padding-top: 25px; height: 400px; text-align: left;">
+      <span class="tag" >&lt;table <span style="color:aquamarine">border="2"</span><br>
+        <span style="color:dimgrey"> cellspacing="0"  <br>
+         cellpadding="0"</span>  <br>
+         <span style="color:indianred">height="150px" </span>
+         <br><span style="color:gold">width="300px"</span>&gt;<br>
+         <span class="atrybut"> &lt;tr&gt;<span class="green">&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;</span>&lt;/tr&gt;<br>
+         &lt;tr&gt;<span class="green">&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;</span>&lt;/tr&gt;<br>
+&lt;tr&gt;<span class="green">&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;</span>&lt;/tr&gt;</span><br>
+<br>&lt;/table&gt;</span>
+ </div>
+ 
+</div>
+<div class="half">
+   <h4>Rezultat</h4>
+   <div class="halfin" style=" padding-top: 25px;height: 400px">
+<table border="2" align="center" cellspacing="0" cellpadding="0" height="350px" width="300px">
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+   </table></div>
+</div><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
+<p style="text-align: center;">By móc sobie bardziej unaocznić stworzone komórki, możemy wpisać w nie dowolny tekst.</p>
+
+<div class="half" >
+   <h4>Kod HTML</h4>
+   <div  class="halfin" style="padding-top: 25px; height: 550px; text-align: left;">
+      <span class="tag" >&lt;table <span style="color:aquamarine">border="2"</span><br>
+        <span style="color:dimgrey"> cellspacing="0"  <br>
+         cellpadding="0"</span>  <br>
+         <span style="color:indianred">height="150px" </span>
+         <br><span style="color:gold">width="300px"</span>&gt;<br>
+         <span class="atrybut"> &lt;tr&gt;<span class="green">&lt;td&gt;<span class="white">1</span>&lt;/td&gt;&lt;td&gt;<span class="white"2>2</span>&lt;/td&gt;&lt;td&gt;<span class="white">3</span>&lt;/td&gt;</span>&lt;/tr&gt;<br>
+         &lt;tr&gt;<span class="green">&lt;td&gt;<span class="white">4</span>&lt;/td&gt;&lt;td&gt;<span class="white">5</span>&lt;/td&gt;&lt;td&gt;<span class="white">6</span>&lt;/td&gt;</span>&lt;/tr&gt;<br>
+&lt;tr&gt;<span class="green">&lt;td&gt;<span class="white">7</span>&lt;/td&gt;&lt;td&gt;<span class="white">8</span>&lt;/td&gt;&lt;td&gt;<span class="white">9</span>&lt;/td&gt;</span>&lt;/tr&gt;</span><br>
+<br>&lt;/table&gt;</span>
+ </div>
+ 
+</div>
+<div class="half">
+   <h4>Rezultat</h4>
+   <div class="halfin" style=" padding-top: 25px;height: 550px">
+<table border="2" align="center" cellspacing="0" cellpadding="0" height="350px" width="300px">
+<tr><td>1</td><td>2</td><td>3</td></tr>
+<tr><td>4</td><td>5</td><td>6</td></tr>
+<tr><td>7</td><td>8</td><td>9</td></tr>
+   </table></div>
+</div><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
+   <p style="text-align: center;">Tak jak w przypadku całej tabeli możemy zmieniać rozmiary całych wierszy lub poszczególnych komórek (height="" width=""). <br>A dodatkowo możemy zmieniać kolor tła wiersza/komórki (bgcolor="").</p>
+   
+   <div class="half" >
+      <h4>Kod HTML</h4>
+      <div  class="halfin" style="padding-top: 25px; height: 550px; text-align: left;">
+         <span class="tag" >&lt;table <span style="color:aquamarine">border="2"</span><br>
+           <span style="color:dimgrey"> cellspacing="0"  <br>
+            cellpadding="0"</span>  <br>
+            <span style="color:indianred">height="150px" </span>
+            <br><span style="color:gold">width="300px"</span>&gt;<br>
+            <span class="atrybut"> &lt;tr <b>height="20px" bgcolor="red"</b>&gt;<br><span class="green">&lt;td &gt;<span class="white">1</span>&lt;/td&gt;&lt;td&gt;<span class="white"2>2</span>&lt;/td&gt;&lt;td&gt;<span class="white">3</span>&lt;/td&gt;</span>&lt;/tr&gt;<br>
+            &lt;tr&gt;<span class="green">&lt;td&gt;<span class="white">4</span>&lt;/td&gt;&lt;td&gt;<span class="white">5</span>&lt;/td&gt;&lt;td&gt;<span class="white">6</span>&lt;/td&gt;</span>&lt;/tr&gt;<br>
+   &lt;tr&gt;<span class="green">&lt;td&gt;<span class="white">7</span>&lt;/td&gt;<br>&lt;td <b>bgcolor="green"</b>&gt;<span class="white">8</span>&lt;/td&gt;<br>&lt;td&gt;<span class="white">9</span>&lt;/td&gt;</span>&lt;/tr&gt;</span><br>
+   <br>&lt;/table&gt;</span>
+    </div>
+    
+   </div>
+   <div class="half">
+      <h4>Rezultat</h4>
+      <div class="halfin" style=" padding-top: 25px;height: 550px">
+   <table border="2" align="center" cellspacing="0" cellpadding="0" height="350px" width="300px">
+   <tr height="20px" bgcolor="red"><td>1</td><td>2</td><td>3</td></tr>
+   <tr><td>4</td><td>5</td><td>6</td></tr>
+   <tr><td>7</td><td bgcolor="green">8</td><td>9</td></tr>
+      </table></div>
+   </div>
+<br>
+   <p style="text-align: center;">Możemy również scalać komórki tabeli za pomocą atrybutów <span style="color:cadetblue">colspan</span> (scalanie w poziomie) oraz <span style="color:cadetblue">rowspan</span> (scalanie w pionie).<br>
+   Po wpiasniu <span style="color:cadetblue">colspan=""</span>/<span style="color:cadetblue">rowspan=""</span> w cudzysłowie należy podać liczbę komórek jaką chcemy scalić, a potem usunąć je z tabeli (poza komórką scalującą, czyli tą w której znajduję się atrybuty <span style="color:cadetblue">rowspan</span> lub <span style="color:cadetblue">colspan</span>).</p>
+   
+   <div class="half" >
+      <h4>Kod HTML</h4>
+      <div  class="halfin" style="padding-top: 25px; height: 700px; text-align: left;">
+         <span class="tag" >&lt;table <span style="color:aquamarine">border="2"</span><br>
+           <span style="color:dimgrey"> cellspacing="0"  <br>
+            cellpadding="0"</span>  <br>
+			 
+
+		 
+			 
+			 
+			 
+			 
+
+	
+            <span style="color:indianred">height="150px" </span>
+            <br><span style="color:gold">width="300px"</span>&gt;<br>
+            
+            <br>
+            <span class="atrybut"> &lt;tr <b>height="20px" bgcolor="red"</b>&gt;<br><span class="green">&lt;td &gt;<span class="white">1</span>&lt;/td&gt;&lt;td&gt;<span class="white"2>2</span>&lt;/td&gt;&lt;td&gt;<span class="white">3</span>&lt;/td&gt;</span><br>&lt;/tr&gt;<br>
+            <br>
+
+            &lt;tr&gt;<span class="green">&lt;td <span style="color:cadetblue"><b>rowspan="2"</b></span>&gt;<span class="white">y</span>&lt;/td&gt;&lt;td <span style="color:cadetblue"><b>colspan="2"</b></span>&gt;x<br><span class="atrybut">&lt;/tr&gt;</span><br>
+
+
+
+
+  <span class="atrybut"> &lt;tr&gt;</span><span class="green"><br>&lt;td <b>bgcolor="green"</b>&gt;<span class="white">8</span>&lt;/td&gt;<br>&lt;td&gt;<span class="white">9</span>&lt;/td&gt;</span><br><span class="atrybut">&lt;/tr&gt;</span><br>
+   <br><span class="tag">&lt;/table&gt;</span>
+    </div>
+    
+   </div>
+   <div class="half">
+      <h4>Rezultat</h4>
+      <div class="halfin" style=" padding-top: 25px;height: 700px">
+   <table border="2" align="center" cellspacing="0" cellpadding="0" height="350px" width="300px">
+   <tr height="20px" bgcolor="red"><td>1</td><td>2</td><td>3</td></tr>
+   <tr><td rowspan="2">y</td><td colspan="2">x</td></tr>
+   <tr><td bgcolor="green">8</td><td>9</td></tr>
+      </table></div>
+      
+   </div>
+   <p style="text-align: center;">Komórka y powstała poprzez scalenie komórek 4 i 7 w pionie.<br>
+   Komórka x powstała poprzez scalenie komórek 5 i 6 w poziomie.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<br><br><br>
+
+
+	</div>
+ <!-- tabele -->		 
+<!-- script - nawigacja -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+</body>
+</html>

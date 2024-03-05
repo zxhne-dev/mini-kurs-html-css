@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	<script>
+	   $(window).scroll(function()
+	   {
+		  if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+		  else $('.scrollup').fadeOut();		
+	   }
+	   );
+	</script>
+	<a href="#" class="scrollup"></a>
+	<div class="nav">
+		<ol>
+			<li><div style="background-color: #005374; height: 35px"><a href="html.html">Wstęp</a></div></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+<div class="one">
+	<h1>mini kurs html</h1>
+	<div class="two">
+			<h2>Czym jest HTML?</h2>
+			 <p><b>HTML (HyperText Markup Language) </b>jest językiem używanym do tworzenia stron internetowych. Jest to także język znaczników, czyli oprócz głównego tekstu dokument zawiera w sobie informację opisujące go. Te dodatkowe informacje wplotywane są za pomocą znaczników.</p>
+			  <div class="three">
+				 <h2>Historia</h2>
+				  <p>W 1980 fizyk Tim Berners-Lee, pracujący dla ośrodka naukowo-badawczego CERN, stworzył prototyp hipertekstowego systemu informacyjnego – ENQUIRE. System wykorzystywano do organizowania i udostępniania dokumentów związanych z badaniami naukowymi. Rewolucyjność pomysłu polegała na tym, że użytkownik, posługując się odnośnikami, mógł z jednej lokalizacji przeglądać dokumenty fizycznie znajdujące się w innych miejscach na świecie.<br>
+				  W 1989 Berners-Lee i inżynier oprogramowania CERN Robert Cailliau przedstawili równolegle dwie propozycje hipertekstowych systemów informacyjnych opartych na sieci Internet. Oba projekty cechowała podobna funkcjonalność. Rok później opracowali wspólną propozycję zaakceptowaną przez CERN – projekt WorldWideWeb (W3).</p>
+				   <div class="four">
+					 <h2>Wersje</h2>
+					 <ul>
+						 <li>HTML 3.0 - kwiecień 1995 r.</li> 
+						 <li>HTML 3.2 - styczeń 1997 r.</li> 
+						 <li>HTML 4.0 - styczeń 1997 r.</li> 
+						 <li>HTML 4.0 (poprawiona wersja) - kwiecień 1998 r.</li> 
+						 <li>HTML 4.01 - grudzień 1999 r.</li> 
+						 <li>HTML 5 - październik 2014 r.</li> 
+					 </ul>
+					    <div class="five">
+							<h2>Zastosowanie</h2>
+							<p>HTML pozwala opisać strukturę informacji
+								 zawartych wewnątrz strony internetowej,
+								  nadając znaczenie poszczególnym fragmentom tekstu – 
+								  formując hiperłącza, akapity, nagłówki, listy – 
+								  oraz osadza w tekście dokumentu obiekty plikowe 
+								  np. multimedia bądź elementy baz danych np. 
+								  interaktywne formularze danych. Przede wszystkim
+								   umożliwia określenie wyglądu dokumentu w
+								    przeglądarce internetowej.</p>
+						</div></div></div></div></div><br><br><br><br><br><br>
+	</div>
+
+<!-- script - nawigacja -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+
+</body>
+</html>

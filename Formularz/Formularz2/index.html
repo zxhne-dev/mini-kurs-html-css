@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Logowania</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Rejestracja</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field login" 
+                placeholder="Login" required>
+                <input type="password" class="input-field" 
+                placeholder="Podaj Hasło" required>
+                <label for="zapamietaj">
+                <input type="checkbox" class="chech-box" id="zapamietaj"><span>Zapamiętaj Hasło</span>
+                </label>
+                <button type="submit" class="submit-btn" onclick="loginbtn()">Zaloguj się</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field login" 
+                placeholder="Login" required>
+                <input type="email" class="input-field" 
+                placeholder="Email" required>
+                <input type="password" id="password" class="input-field" 
+                placeholder="Podaj Hasło" required>
+                <input type="password" id="confirm_password" class="input-field" 
+                placeholder="Powtórz Hasło" required>
+                <label for="warunki">
+                <input type="checkbox" class="chech-box" id="warunki" required><span>Zgadzam się na warunki strony</span>
+                </label>
+                <button type="submit" class="submit-btn">Zarejestruj się</button>
+            </form>
+        </div>   
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-29.282576866764277vw";
+            y.style.left = "3.6603221083455346vw";
+            z.style.left = "10vw";
+        }
+        function login(){
+            x.style.left = "3.6603221083455346vw";
+            y.style.left = "29.282576866764277vw";
+            z.style.left = "0";
+        }
+
+        //działająca rejestracja
+        var buttons = document.querySelectorAll(".submit-btn");
+        // loginbtn = buttons[0];
+        registerbtn = buttons[1];
+        function loginbtn(){
+            let login = document.getElementsByClassName("login")[0].value;
+            let password = document.querySelectorAll("input[type=password]")[0].value;
+            if(login==localStorage.getItem("login") & password==localStorage.getItem("password")){
+                    window.location = "main.html"
+                }
+                else{
+                    alert("Nieprawidłowe dane logowania!")
+                }     
+        }
+        registerbtn.addEventListener(("click"),function(){
+            let login = document.getElementsByClassName("login")[1].value;
+            localStorage.setItem("login",login);
+            let password = document.querySelectorAll("input[type=password]")[1].value;
+            localStorage.setItem("password",password);
+        })
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault()
+        })
+
+        //password validation
+        var password = document.getElementById("password")
+        , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+        if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Wpisane hasła nie są identyczne");
+        } else {
+        confirm_password.setCustomValidity('');
+        }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+
+    </script>
+</body>
+</html>

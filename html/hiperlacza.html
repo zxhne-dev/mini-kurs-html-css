@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	<script>
+	   $(window).scroll(function()
+	   {
+		  if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+		  else $('.scrollup').fadeOut();		
+	   }
+	   );
+	</script>
+	<a href="#" class="scrollup"></a>
+	
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="hiperlacza.html">Hiperłącza</a></div></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><a href="formularz.html">Formularze</a></li>
+		</ol>
+	</div>
+<div class="container">
+<!-- hiperłącza -->
+<div class="one"><h3>Hiperłącza</h3><br><br><br>
+ <div class="two" style="height: 1600px;"><p style="text-align: center;">Hiperłącza czyli odnośniki służą do wewnętrznego poruszania się po witrynie internetowej, ale także po całym internecie.
+Do przemieszczania się po podstronach jednej witryny wykorzystujemy hiperłącza wewnętrzne, natomiast do przemieszczania się pomiędzy róznimi witrynami używamy hiperłączy zewnętrznych.<br>
+<br>Do stworzenia hiperłącza używamy tagów <span class="tag">&lt;a&gt;&lt;/a&gt;</span><br>
+
+by hiperłącze było w pełni funkcjonalne musimy dodać atrybut <span class="atrybut">href="link"</span><br>
+(np. <span class="atrybut">href="https://pl.wikipedia.org/"</span>).
+</p><br>
+
+
+<div class="half" >
+<h4>Kod HTML</h4>
+<div  class="halfin" style="padding-top: 25px; height: 200px; text-align: left;">
+ <span class="tag">&lt;a</span> <span class="atrybut">href="https://pl.wikipedia.org/"</span><span class="tag">&gt;</span><br>Kliknij na mnie<br> <span class="tag">&lt;/a&gt;</span>
+</div>
+
+</div>
+<div class="half">
+<h4>Rezultat</h4>
+<div class="halfin" style=" padding-top: 25px;height: 200px">
+   <a style="color:blue" href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_główna">Kliknij na mnie</a>
+</div>
+ </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <p style="text-align: center;"> By po kliknięciu na odnośnik strona otwierałą się w nowej karcię należy dodać atrybut <span class="atrybut">target</span> wraz z wartością <span class="green">_blank</span> lub <span class="green">new window</span>.
+   </p><br>
+   
+   
+   <div class="half" >
+   <h4>Kod HTML</h4>
+   <div  class="halfin" style="padding-top: 25px; height: 200px; text-align: left;">
+    <span class="tag">&lt;a</span> <span class="atrybut">href="https://pl.wikipedia.org/"<br>
+   target=<span class="green">"new window"</span></span><span class="tag">&gt;</span><br>Kliknij na mnie<br> <span class="tag">&lt;/a&gt;</span>
+   </div>
+   
+   </div>
+   <div class="half">
+   <h4>Rezultat</h4>
+   <div class="halfin" style=" padding-top: 25px;height: 200px">
+      <a href="https://pl.wikipedia.org/"
+target="new window" style="color:blue" >Kliknij na mnie</a>
+   </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p style="text-align: center;">Powyżej znajdują się hiperłącza zewnętrzne, gdyż prowadzą do innych witryn. W celu stworzenia hiperłącza wewnętrznego należy ustawić wartość atrybutu <span class="atrybut">href</span> na ścieżkę docelowego pliku.  
+    </p><br>
+    
+    
+    <div class="half" >
+    <h4>Kod HTML</h4>
+    <div  class="halfin" style="padding-top: 25px; height: 200px; text-align: left;">
+     <span class="tag">&lt;a</span> <span class="atrybut">href="../Multimedia/index.html"<br>
+   target=<span class="green">"_blank"</span></span><span class="tag">&gt;</span><br>Kliknij na mnie<br> <span class="tag">&lt;/a&gt;</span>
+    </div>
+    
+    </div>
+    <div class="half">
+    <h4>Rezultat</h4>
+    <div class="halfin" style=" padding-top: 25px;height: 200px">
+       <a href="../Multimedia/index.html"
+ target="_blank" style="color:blue" >Kliknij na mnie</a>
+    </div>
+     </div>
+</div>
+
+
+
+
+	</div>
+<br><br><br>
+	<!-- koniec hiperłącza -->
+	<!-- script - nawigacja -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+<!-- koniec script - nawigacja -->
+ </body>
+</html>

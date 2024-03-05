@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="rejestracja">
+    <form action="index.html">
+        <fieldset>
+            <legend>
+                Rejestracja
+            </legend>
+            <div class="row">
+                <div class="col">
+                    <p>* Imię
+                    <br>
+                    <input class="zmiana_dlugosci" type="text" name="name" placeholder="Wpisz imię" required="required">
+                    </p>  
+                </div>
+                <div class="col">
+                    <p>* Adres email
+                    <br>
+                    <input class="zmiana_dlugosci" type="email" required="required" placeholder="Podaj swój adres e-mail">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                    * Nazwisko
+                    <br>
+                    <input class="zmiana_dlugosci" type="text" name="surname" placeholder="Wpisz nazwisko" required="required">
+                    </p>
+                </div>
+                <div class="col">
+                    <p>* Nazwa użytkownika
+                    <br>
+                    <input class="zmiana_dlugosci" type="text" name="username" placeholder="Podaj login" required="required">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>* PESEL
+                    <br>
+                    <input class="zmiana_dlugosci" type="number" max="99999999999" placeholder="Wpisz numer PESEL" required="required">
+                    </p>
+                </div>
+                <div class="col">
+                    <p>* Hasło
+                    <br>
+                    <input class="zmiana_dlugosci" id="password" type="password" name="password" placeholder="Utwórz hasło" required="required">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Numer telefonu
+                    <br>
+                    <input class="zmiana_dlugosci" type="number" max="999999999"  placeholder="+48">
+                    </p>
+                </div>
+                <div class="col">
+                    <p>* Powtórz hasło
+                    <br>
+                    <input id="confirm_password" class="zmiana_dlugosci" type="password" name="password" placeholder="Powtórz hasło" required="required">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Województwo
+                        <br>
+                        <select class="zmiana_dlugosci">
+                            <option value=""></option>
+                            <option value="dolnośląskie">dolnośląskie</option>
+                            <option value="kujawsko-pomorskie">kujawsko-pomorskie</option>
+                            <option value="lubelskie">lubelskie</option>
+                            <option value="lubuskie">lubuskie</option>
+                            <option value="łódzkie">łódzkie</option>
+                            <option value="małopolskie">małopolskie</option>
+                            <option value="mazowieckie">mazowieckie</option>
+                            <option value="opolskie">opolskie</option>
+                            <option value="podkarpackie">podkarpackie</option>
+                            <option value="podlaskie">podlaskie</option>
+                            <option value="pomorskie">pomorskiepomorskie</option>
+                            <option value="śląskie">śląskie</option>
+                            <option value="świętokrzyskie">świętokrzyskie</option>
+                            <option value="warmińsko-mazurskie">warmińsko-mazurskie</option>
+                            <option value="wielkopolskie">wielkopolskie</option>
+                            <option value="zachodniopomorskie">zachodniopomorskie</option>
+                        </select>
+                        </p>
+                </div>
+                <div class="col">
+                    <p>* Data urodzenia
+                    <br>
+		            <input class="zmiana_dlugosci" type="date" name="depart" required="required">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="full">
+                    <p>Płeć
+                    <br>
+                    <input type="radio" name="płeć" id="mężczyzna" class="answer">
+                    <label for="mężczyzna" class="answer">mężczyzna</label> 
+                    <br>
+                    <input type="radio" name="płeć" id="kobieta" class="answer">
+                    <label for="kobieta" class="answer">kobieta</label> 
+                    </p>
+                </div>
+            </div>
+            </fieldset>
+            <div class="profilowe">
+                <fieldset>
+                <legend>Zdjęcie profilowe</legend>
+                <label>
+                    <input class="radio-avatar" type="radio" name="avatar">
+                    <img src="profilowe/jaroslawik.jpg">
+                </label>
+                <label>
+                    <input class="radio-avatar"  type="radio" name="avatar">
+                    <img id="rock">
+                </label>
+                <label>
+                    <input class="radio-avatar" type="radio" name="avatar">
+                    <img src="profilowe/02.jpg">
+                </label>
+                <label>
+                    <input class="radio-avatar" type="radio" name="avatar">
+                    <img id="anime">
+                </label>
+                <br>
+                <input type="button" id="uncheck" value="Usuń wybór">
+                <br>
+                Możesz wybrać własny avatar<br>
+                <input type="file" accept="image/*">
+                </fieldset>
+            </div>
+            <div class="button">
+                <input type="submit" id="btn" value="Zarejestruj się">
+                <input type="reset" id="btn" value="Wyczyść">
+            </div>
+        </fieldset>
+        * - pole wymagane
+    </form>
+</div>
+<div class="footer">
+    Autor: &copy; Bartosz Piasecki 3K
+</div>
+
+<script>
+    //password validation
+    var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword(){
+    if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Wpisane hasła nie są identyczne");
+    } else {
+    confirm_password.setCustomValidity('');
+    }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+
+    //uncheckable radio in profile pictures
+    document.getElementById('uncheck').onclick = function() {
+    var radio = document.querySelector('input[type=radio][name=avatar]:checked');
+    radio.checked = false;
+}
+</script>
+</body>
+</html>

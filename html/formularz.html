@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <title>Mini poradnik HTML</title>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/icon.png">
+	  <link rel="stylesheet" href="../css/style.css">
+	  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap" 
+	  rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+   <body>
+   <script>
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();		
+      }
+      );
+   </script>
+   <a href="#" class="scrollup"></a>
+	
+	<div class="nav">
+		<ol>
+			<li><a href="html.html">Wstęp</a></li>
+			<li><a href="tekst.html">Tekst</a></li>
+			<li><a href="znaki.html">Znaki </a></li>
+			<li><a href="listy.html">Listy</a></li>
+			<li><a href="tabele.html">Tabele</a></li>
+			<li><a href="hiperlacza.html">Hiperłącza</a></li>
+			<li><a href="grafika.html">Grafika</a></li>
+			<li><a href="multimedia.html">Multimedia</a></li>
+			<li><a href="inputy.html">Inputy</a></li>
+			<li><div style="background-color: #005374; height: 35px"><a href="formularz.html">Formularze</a></div></li>
+		</ol>
+	</div>
+<div class="container">
+   <div class="one"><h3>Formularze</h3>
+   <div class="two" style="height: 1750px;">
+     <br><br><p style="text-align: center;">
+      By uporządkować wszystkie dane oraz przesłać je na serwer, na którym znajduje się nasza strona wszystkie pola mające na celu odebrać dane od użytkownika strony musimy umieścić w formularzu.
+      <br> Formularze tworzymy za pomocą znacznika <span class="tag">&lt;form&gt;&lt;/form&gt;</span>.<br>
+      Musimy pamiętać by dodawać tytuły naszym polom wejscia, możemy to zrobić za pomocą znacznika <span class="tag">&lt;label&gt;&lt;/label&gt;</span>.<br>
+	 <a href=../Formularz/index.html title="Formularze" style="color: aqua">  Tu znajdziesz moją pracę dotyczącą formularzy. Możesz tu zajrzeć jeśli szukasz inspiracji.</a>
+</p><br><br>
+<div class="half">
+   <h4>Kod HTML</h4>
+   <div  class="halfin" style="padding-top: 25px; height: 1300px; text-align: left;">
+      <span class="tag">&lt;form&gt;</span><br><br>
+
+
+
+
+      &nbsp;<span class="tag">&lt;label&gt;</span>Imię<span class="tag">&lt;br&gt;</span><br>
+
+      &nbsp;<span class="tag"> &lt;input <span class="atrybut">type=<span class="green">"text"</span></span>&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;</span><br><br>
+
+
+      &nbsp;<span class="tag">&lt;label&gt;</span>Nazwisko<span class="tag"> &lt;br&gt;
+         <br>&nbsp; &lt;input </span> <span class="atrybut"> type=</span><span class="green">"text"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+
+            &nbsp; &lt;label&gt;</span>Login<span class="tag">&lt;br&gt;
+         
+         <br>&nbsp;&lt;input</span> <span class="atrybut">type=</span><span class="green">"text"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+
+
+            &nbsp;&lt;label&gt;</span>Email<span class="tag">&lt;br&gt;<br>
+         
+               &nbsp; &lt;input</span><span class="atrybut"> type=</span><span class="green">"email"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+                  &nbsp;&lt;label&gt;</span>Hasło<span class="tag">&lt;br&gt;<br>
+         
+                     &nbsp;&lt;input </span><span class="atrybut">type=</span><span class="green">password"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+	   
+	   
+	   
+	   
+	   
+	   			 &nbsp; &lt;label&gt;</span>Data<span class="tag">&lt;br&gt;
+         
+         <br>&nbsp;&lt;input</span> <span class="atrybut">type=</span><span class="green">"date"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   	 &nbsp; &lt;label&gt;</span>Czas<span class="tag">&lt;br&gt;
+         
+         <br>&nbsp;&lt;input</span> <span class="atrybut">type=</span><span class="green">"time"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+	   
+	   
+	   
+	   
+	   
+	   	 &nbsp; &lt;label&gt;</span>Plik<span class="tag">&lt;br&gt;
+         
+         <br>&nbsp;&lt;input</span> <span class="atrybut">type=</span><span class="green">"file"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+	   
+	   
+	   
+	   
+	   
+	   
+	   	 &nbsp; &lt;label&gt;</span>Kolor<span class="tag">&lt;br&gt;
+         
+         <br>&nbsp;&lt;input</span> <span class="atrybut">type=</span><span class="green">"color"</span><span class="tag">&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+	   
+	   
+	   
+	   
+	   
+                        &nbsp; &lt;input </span><span class="atrybut">type=<span class="green">"submit"</span> value=<span class="green">"Prześlij"</span>&gt;</span><br><br>
+      
+      
+      
+      
+      
+      <span class="tag">&lt;/form&gt;</span>
+   </div>
+   
+   </div>
+   <div class="half">
+   <h4>Rezultat</h4>
+   <div class="halfin" style=" padding-top: 25px;height: 1300px">
+   <form>
+      
+      <label>Imię<br><input type="text"></label><br><br>
+      <label>Nazwisko<br><input type="text"></label><br><br>
+      <label>Login<br><input type="text"></label><br><br>
+      <label>Email<br><input type="email"></label><br><br>
+      <label>Hasło<br><input type="password"></label><br><br>
+	  <label>Data<br><input type="date"></label><br><br>
+      <label>Czas<br><input type="time"></label><br><br>
+	  <label>Plik<br><input type="file"></label><br><br>
+      <label>Kolor<br><input type="color"></label><br><br>
+      <input type="submit" value="Prześlij">
+   </form>
+
+
+
+   </div>
+    </div>
+        
+         
+
+
+
+
+
+
+
+   </div>
+   
+     
+  </div>
+  <br><br>  <br>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+  <script>
+
+  $(document).ready(function() {
+  var NavY = $('.nav').offset().top;
+   
+  var stickyNav = function(){
+  var ScrollY = $(window).scrollTop();
+       
+  if (ScrollY > NavY) { 
+     $('.nav').addClass('sticky');
+  } else {
+     $('.nav').removeClass('sticky'); 
+  }
+  };
+   
+  stickyNav();
+   
+  $(window).scroll(function() {
+     stickyNav();
+  });
+  });
+  
+</script>
+
+ </body>
+</html>

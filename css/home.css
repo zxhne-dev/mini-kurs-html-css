@@ -1,0 +1,21 @@
+img{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+
+body{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+
+hr{
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    border: none;
+}
