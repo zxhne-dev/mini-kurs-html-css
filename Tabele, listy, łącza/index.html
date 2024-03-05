@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele, listy, łącza Bartosz Piasecki 3k</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script>
+
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>50) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+</head>
+<body>
+
+<a href="#" class="scrollup"></a>
+
+<div class="header">
+    <div class="progress-bar" id="myBar"></div>
+</div>
+<div class="kontener">
+    <div align="center">
+        <h1>Najwyższe budowle wolno stojące</h1>
+        <p>Na początek warto wiedzieć czym jest budynek i budowla oraz czym różnią się od siebie te pojęcia.
+        Budynkiem jest obiekt budowlany, który jest trwale związany z gruntem, wydzielony z przestrzeni za pomocą 
+        przegród budowlanych, posiadający fundament oraz dach. Tymczasem budowlą jest po prostu obiekt budowlany, 
+        który nie jest budynkiem. W dalszej części strony zostaną zaprezentowane i opisane oprócz budynków takie budowle
+        jak kominy, słupy, wieże itp.</p>
+        <hr size="4" color="white">
+        <table border="0">
+            <tr>
+                <td><a href="Podstrony/Burj_Khalifa.html"><img id="photo" src="Foto/burj-khalifa.jpg"></a></td>
+                <td><a href="Podstrony/1_World_Trade_Center.html"><img id="photo" src="Foto/1-world-trade-center.jpg"></a></td>
+                <td><a href="Podstrony/Shanghai_Tower.html"><img id="photo" src="Foto/Shanghai_Tower.jpg"></a></td>
+                <td><a href="Podstrony/Hotel_Ryugyong.html"><img id="photo" src="Foto/Hotel_Ryugyong.jpg"></a></td>
+            </tr>
+            <tr>
+                <th><hr><a href="Podstrony/Burj_Khalifa.html">Burj Khalifa</a><hr></th>
+                <th><hr><a href="Podstrony/1_World_Trade_Center.html">1 World Trade Center</a><hr></th>
+                <th><hr><a href="Podstrony/Shanghai_Tower.html">Shanghai Tower</a><hr></th>
+                <th><hr><a href="Podstrony/Hotel_Ryugyong.html">Hotel Ryugyŏng</a><hr></th>
+            </tr>
+            <tr>
+                <td><a href="Podstrony/Varso_Tower.html"><img id="photo" src="Foto/varso_tower.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Tokyo_Skytree"><img id="photo" src="Foto/Tokyo_Skytree.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Empire_State_Building"><img id="photo" src="Foto/empire-state-building.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Petronas_Towers"><img id="photo" src="Foto/Petronas_Towers.jpg"></a></td>
+            </tr>
+            <tr>
+                <th><hr><a href="Podstrony/Varso_Tower.html">Varso Tower</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Empire_State_Building">Empire State Building</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Petronas_Towers">Petronas Towers</a><hr></th>
+            </tr>
+            <tr>
+                <td><a href="https://pl.wikipedia.org/wiki/Elektrownia_GRES-2"><img id="photo" src="Foto/komin_elektrowni_GRES-2.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Kijowska_wie%C5%BCa_telewizyjna"><img id="photo" src="Foto/Kijowska_wieza_telewizyjna.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Trboveljski_dimnik"><img id="photo" src="Foto/Trboveljski_dimnik.jpg"></td>
+                <td><a href="https://pl.wikipedia.org/wiki/S%C5%82upy_energetyczne_nad_rzek%C4%85_Jangcy"><img id="photo" src="Foto/Slupy_energetyczne_nad_rzeka_Jangcy.jpg"></a></td>
+            </tr>
+            <tr>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Elektrownia_GRES-2">Komin elektrowni GRES-2</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Kijowska_wie%C5%BCa_telewizyjna">Kijowska wieża telewizyjna</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Trboveljski_dimnik">Trboveljski dimnik</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/S%C5%82upy_energetyczne_nad_rzek%C4%85_Jangcy">Pylon w Jiangyin</a><hr></th>
+            </tr>
+            <tr>
+                <td><a href="https://pl.wikipedia.org/wiki/KVLY/KTHI_TV_Mast"><img id="photo" src="Foto/KVLY-TV_Mast_Tower_Wide.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Berliner_Fernsehturm"><img id="photo" src="Foto/Berliner_Fernsehturm.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Abrad%C5%BC_al-Bajt"><img id="photo" src="Foto/Abradz_al-Bajt.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Lotte_World_Tower"><img id="photo" src="Foto/Lotte_World_Tower.jpg"></a></td>
+            </tr>
+            <tr>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/KVLY/KTHI_TV_Mast">KVLY/KTHI TV Mast</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Berliner_Fernsehturm">Berliner Fernsehturm</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Abrad%C5%BC_al-Bajt">Abradż al-Bajt</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Lotte_World_Tower">Lotte World Tower</a><hr></th>
+            </tr>
+            <tr>
+                <td><a href="https://pl.wikipedia.org/wiki/Q1_Tower"><img id="photo" src="Foto/Q1_Tower.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_Eiffla"><img id="photo" src="Foto/wieza_Eiffla.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Ryska_wie%C5%BCa_radiowo-telewizyjna"><img id="photo" src="Foto/ryska_wieza.jpg"></a></td>
+                <td><a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_telewizyjna_Ostankino"><img id="photo" src="Foto/wieza_telewizyjna_Ostankino.jpg"></a></td>
+            </tr>
+            <tr>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Q1_Tower">Q1 Tower</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_Eiffla">Wieża Eiffla</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Ryska_wie%C5%BCa_radiowo-telewizyjna">Riga Radio & TV Tower</a><hr></th>
+                <th><hr><a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_telewizyjna_Ostankino">Wieża telewizyjna Ostankino</a><hr></th>
+            </tr>
+        </table>
+    </div>
+<br>
+<hr size="4" color="white">
+<div align="center">
+    <br>
+    <script>
+
+    function go(){
+    if (document.selecter.select1.options[document.selecter.select1.selectedIndex].value != "none") {
+    location = document.selecter.select1.options[document.selecter.select1.selectedIndex].value
+    } 
+    }
+      
+    document.write('<form name="selecter"><select name="select1" size=1>');
+    document.write('<option value=none>Wybierz budowle');
+    document.write('<option value=none>--------------------');
+    document.write('<option value="Podstrony/burj_khalifa.html">Burj Khalifa');
+    document.write('<option value="Podstrony/1_World_Trade_Center.html">1 World Trade Center');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Empire_State_Building">Empire State Building');
+    document.write('<option value="https://pl.wikipedia.org/wiki/KVLY/KTHI_TV_Mast">KVLY/KTHI TV Mast');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Elektrownia_GRES-2">Komin elektrowni GRES-2');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Trboveljski_dimnik">Trboveljski dimnik');
+    document.write('<option value="Podstrony/Shanghai_Tower.html">Shanghai Tower');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Abrad%C5%BC_al-Bajt">Abradz al-Bajt');
+    document.write('<option value="Podstrony/Varso_Tower.html">Varso Tower');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Petronas_Towers">Petronas Towers');
+    document.write('<option value="Podstrony/Hotel_Ryugyong.html">Hotel Ryugyŏng');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Lotte_World_Tower">Lotte World Tower');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Q1_Tower">Q1 Tower');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Wie%C5%BCa_Eiffla">Wieża Eiffla');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Ryska_wie%C5%BCa_radiowo-telewizyjna">Riga Radio & TV Tower');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Wie%C5%BCa_telewizyjna_Ostankino">wieża telewizyjna Ostankino');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Berliner_Fernsehturm">Berliner Fernsehturm');
+    document.write('<option value="https://pl.wikipedia.org/wiki/S%C5%82upy_energetyczne_nad_rzek%C4%85_Jangcy">Pylon w Jiangyin');
+    document.write('<option value="https://pl.wikipedia.org/wiki/Kijowska_wie%C5%BCa_telewizyjna">Kijowska wieża telewizyjna');
+    document.write('</select>');
+    document.write('<INPUT TYPE="button" VALUE="Przejdź do" onclick="go()">');
+    document.write('</form>');
+    </script>
+</div> 
+<br>
+    <div align="center">
+        <hr size="4" color="white">
+        <h2>Więcej informacji</h2>
+        <table celspacing="0" border="1">
+            <th class="nav">Lp.</th>
+            <th class="nav">Nazwa</th>
+            <th class="nav">Miasto</th>
+            <th class="nav">Kraj</th>
+            <th class="nav">Wysokość w metrach</th>
+            <th class="nav">Typ budowli</th>
+            <th class="nav">Rok ukończenia budowy</th>
+            <th class="nav">Ciekawostki</th>
+            <tr>
+                <td class="nav">1.</td>
+                <td><a href="Podstrony/Burj_Khalifa.html">Burj Khalifa</a></td>
+                <td>Dubaj</td>
+                <td><abbr title="Zjednoczone Emiraty Arabskie"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_the_United_Arab_Emirates.jpg"></abbr></td>
+                <td>829,8</td>
+                <td rowspan="3">wieżowiec</td>
+                <td>2009</td>
+                <td>
+                    Najwyższa budowla na świecie, zbudowana przez przedsiębiorstwa:
+                <ul>
+                    <li>Samsung Constructions</li>
+                    <li>BESIX</li>
+                    <li>Arabtec</li>
+                </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="nav">2.</td>
+                <td><a href="Podstrony/1_World_Trade_Center.html">1 World Trade Center</a></td>
+                <td rowspan="2">Nowy Jork</td>
+                <td rowspan="3"><abbr title=" Stany Zjednoczone"><img class="min" id="w90x47" src="Foto/flagi/Flag_of_the_United_States.jpg"></abbr></td>
+                <td>541</td>
+                <td>2014</td>
+                <td>Najwyższa budowla w <abbr title="Stanach Zjednoczonych">USA</abbr></td>
+            </tr>
+            <tr>
+                <td class="nav">3.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Empire_State_Building">Empire State Building</a></td>
+                <td>448,7</td>
+                <td>1931</td>
+                <td>Najwyższy wieżowiec w latach 1931-1972</td>
+            </tr>
+            <tr>
+                <td class="nav">4.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/KVLY/KTHI_TV_Mast">KVLY/KTHI TV Mast</a></td>
+                <td>Blanchard</td>
+                <td>628,8</td>
+                <td>maszt radiowy</td>
+                <td>1963</td>
+                <td>Najwyższy maszt telewizyjny</td>
+            </tr>
+            <tr>
+                <td class="nav">5.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Elektrownia_GRES-2">Komin elektrowni GRES-2</a></td>
+                <td>Ekibastuz</td>
+                <td><abbr title="Kazachstan"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_Kazakhstan.jpg"></abbr></td>
+                <td>419,7</td>
+                <td rowspan="2">komin</td>
+                <td>1987</td>
+                <td>Najwyższy komin świata</td>
+            </tr>
+            <tr>
+                <td class="nav">6.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Trboveljski_dimnik">Trboveljski dimnik</td>
+                <td>Trbovlje</td>
+                <td><abbr title="Słowenia"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_Slovenia.jpg"></abbr></td>
+                <td>360</td>
+                <td>1976</td>
+                <td>Najwyższy komin w Europie</td>
+            </tr>
+            <tr>
+                <td class="nav">7.</td>
+                <td><a href="Podstrony/Shanghai_Tower.html">Shanghai Tower</a></td>
+                <td>Szanghaj</td>
+                <td><abbr title="Chiny"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_the_People's_Republic_of_China.jpg"></abbr></td>
+                <td>632</td>
+                <td rowspan="7">wieżowiec</td>
+                <td>2015</td>
+                <td>Inwestorzy oraz wykonawcy:
+                    <ul>
+                        <li>Shanghai Chengtou Corp.</li>
+                        <li>Luijiazui Finance & Trade Zone Development Co., Ltd.</li>
+                        <li>Shanghai Construction Group</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="nav">8.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Abrad%C5%BC_al-Bajt">Abradż al-Bajt</a></td>
+                <td>Mekka</td>
+                <td><abbr title="Arabia Saudyjska"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_Saudi_Arabia.jpg"></abbr></td>
+                <td>601</td>
+                <td>2011</td>
+                <td>Największy wieżowiec pod względem powierzchni</td>
+            </tr>
+            <tr>
+                <td class="nav">9.</td>
+                <td><a href="Podstrony/Varso_Tower.html">Varso Tower</a></td>
+                <td>Warszawa</td>
+                <td><abbr title="Polska"><img class="min" id="w90x56" src="Foto/flagi/Flag_of_Poland.jpg"></abbr></td>
+                <td>310</td>
+                <td>2022</td>
+                <td>Najwyższy wieżowiec w <abbr title="Uni Europejskiej">UE</abbr></td>
+            </tr>
+            <tr>
+                <td class="nav">10.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Petronas_Towers">Petronas Towers</a></td>
+                <td>Kuala Lumpur</td>
+                <td><abbr title="Malezja"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_Malaysia.jpg"></abbr></td>
+                <td>452</td>
+                <td>1998</td>
+                <td>Wynajmowane są w niej biura firmom takim jak:
+                    <ul>
+                        <li>Microsoft</li>
+                        <li>IBM</li>
+                        <li>Royal Dutch Shell</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="nav">11.</td>
+                <td><a href="Podstrony/Hotel_Ryugyong.html">Hotel Ryugyŏng</a></td>
+                <td>Pjongjang</td>
+                <td><abbr title="Korea Północna"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_North_Korea.jpg"></abbr></td>
+                <td>330</td>
+                <td>Brak planowanego terminu</td>
+                <td>Jego budowa stanęła na ponad 16 lat</td>
+            </tr>
+            <tr>
+                <td class="nav">12.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Lotte_World_Tower">Lotte World Tower</a></td>
+                <td>Seul</td>
+                <td><abbr title="Korea Południowa"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_South_Korea.jpg"></abbr></td>
+                <td>555,7</td>
+                <td>2017</td>
+                <td>Najwyższy budynek w Korei Południowej</td>
+            </tr>
+            <tr>
+                <td class="nav">13.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Q1_Tower">Q1 Tower</a></td>
+                <td>Gold Coast</td>
+                <td><abbr title="Australia"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_Australia.jpg"></abbr></td>
+                <td>323</td>
+                <td>2005</td>
+                <td>Najwyższy budynek mieszkalny</td>
+            </tr>
+            <tr>
+                <td class="nav">14.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_Eiffla">Wieża Eiffla</a></td>
+                <td>Paryż</td>
+                <td><abbr title="Francja"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_France.jpg"></abbr></td>
+                <td>324</td>
+                <td rowspan="4">wieża</td>
+                <td>1889</td>
+                <td>Symbol Paryża, architekci:
+                    <ul>
+                        <li>Gustave Eiffel</li>
+                        <li>Maurice Koechlin</li>
+                        <li>Émile Nouguier</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="nav">15.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Tokyo_Skytree">Tokyo Skytree</a></td>
+                <td>Tokio</td>
+                <td><abbr title="Japonia"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_Japan.jpg"></abbr></td>
+                <td>634</td>
+                <td>2012</td>
+                <td>Najwyższa wieża świata</td>
+            </tr>
+            <tr>
+                <td class="nav">16.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Ryska_wie%C5%BCa_radiowo-telewizyjna">Riga Radio & TV Tower</a></td>
+                <td>Ryga</td>
+                <td><abbr title="Łotwa"><img class="min" id="w90x45" src="Foto/flagi/Flag_of_Latvia.jpg"></abbr></td>
+                <td>368,5</td>
+                <td>1987</td>
+                <td>Najwyższa wieża w <abbr title="Uni Europejskiej">UE</abbr></td>
+            </tr>
+            <tr>
+                <td class="nav">17.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Wie%C5%BCa_telewizyjna_Ostankino">Wieża telewizyjna Ostankino</a></td>
+                <td>Moskwa</td>
+                <td><abbr title="Rosja"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_Russia.jpg"></abbr></td>
+                <td>540</td>
+                <td>1967</td>
+                <td>Najwyższa budowla w Europie</td>
+            </tr>
+            <tr>
+                <td class="nav">18.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Berliner_Fernsehturm">Berliner Fernsehturm</a></td>
+                <td>Berlin</td>
+                <td><abbr title="Niemcy"><img class="min" id="w90x54" src="Foto/flagi/Flag_of_Germany.jpg"></abbr></td>
+                <td>368</td>
+                <td>wieża telewizyjna</td>
+                <td>1969</td>
+                <td>Znajdują się w niej:
+                    <ul>
+                        <li>Platforma widokowa</li>
+                        <li>Restauracja</li>
+                        <li>150 anten telewizyjnych i radiowych</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="nav">19.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/S%C5%82upy_energetyczne_nad_rzek%C4%85_Jangcy">Pylon w Jiangyin</a></td>
+                <td>Jiangyin</td>
+                <td><abbr title="Chiny"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_the_People's_Republic_of_China.jpg"></abbr></td>
+                <td>347</td>
+                <td rowspan="2">wieża</td>
+                <td>2003</td>
+                <td>Najwyższy słup energetyczny</td>
+            </tr>
+            <tr>
+                <td class="nav">20.</td>
+                <td><a href="https://pl.wikipedia.org/wiki/Kijowska_wie%C5%BCa_telewizyjna">Kijowska wieża telewizyjna</a></td>
+                <td>Kijów</td>
+                <td><abbr title="Ukraina"><img class="min" id="w90x60" src="Foto/flagi/Flag_of_Ukraine.jpg"></abbr></td>
+                <td>385</td>
+                <td>1973</td>
+                <td>Najwyższa kratownicowa, stalowa wieża świata</td>
+            </tr> 
+        </table>
+    </div>
+</div>
+<div class="footer">
+    Autor: &copy; Bartosz Piasecki 3K
+</div>
+</body>
+</html>

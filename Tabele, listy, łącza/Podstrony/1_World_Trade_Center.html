@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 World Trade Center</title>
+    <link rel="stylesheet" href="podstrony.css">
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script>
+      $(window).scroll(function()
+		  {
+			if($(this).scrollTop()>50) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		  }
+		  );
+
+      window.onscroll = function() {myFunction()};
+  
+      function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+</head>
+
+<body>
+  <a href="#" class="scrollup"></a>
+  <a href="../index.html" class="back"></a>
+  <div class="header">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+    <div class="kontener">
+      <h1>1 World Trade Center</h1>
+
+      1 World Trade Center (wcześniej pod nazwą Freedom Tower – Wieża Wolności) – jeden z czterech nowojorskich 
+      wieżowców stanowiących część nowego kompleksu, który powstał w miejscu biurowców WTC zniszczonych w wyniku 
+      zamachu z 11 września 2001. Budynek został oddany do użytku i oficjalnie otwarty 3 listopada 2014 roku. Jego 
+      wysokość wynosi 541 metrów, czyli 1776 stóp, które symbolicznie oznaczają datę ogłoszenia Deklaracji 
+      Niepodległości Stanów Zjednoczonych. Jest to najwyższy budynek w Stanach Zjednoczonych.
+
+      Obecnie przyjęta wersja wyglądu drapacza chmur jest wynikiem współpracy Daniela Libeskinda, Davida Childsa 
+      oraz firmy architektonicznej Skidmore, Owings and Merrill. W czasie uroczystości 4 lipca 2004 w tzw. strefie 
+      zero (ang. ground zero) w nowojorskiej dzielnicy Lower Manhattan odsłonięto dwudziestotonową granitową płytę. 
+      Jest to kamień węgielny, który służył pod budowę najwyższego wieżowca Nowego Jorku, powstałego na miejscu 
+      zniszczonych przez terrorystów 11 września 2001 bliźniaczych wieżowców World Trade Center.
+
+      Wieża ma 105 pięter i 240 000 metrów kwadratowych powierzchni biurowej. Budynek został wyposażony w nowatorskie, 
+      bardzo szerokie klatki schodowe do ewakuacji z instalacją ciśnieniową eliminującą dym.
+      <hr>
+
+      <h2>Timelaps budowy</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NbA89YbWoL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+
+      <h2>Galeria</h2>
+      <script src="lightbox/lightbox-plus-jquery.min.js"></script>
+
+
+      <div>
+        <div>
+          <a href="foto podstrony/1 world trade center/Widok_z_daleka.jpg" data-lightbox="example-set" data-title="Widok z daleka">
+            <img class="mini" src="foto podstrony/1 world trade center/Widok_z_daleka.jpg" alt="widok z daleka">
+          </a>
+
+          <a href="foto podstrony/1 world trade center/w_nocy.jpg" data-lightbox="example-set" data-title="W nocy">
+            <img class="mini" src="foto podstrony/1 world trade center/w_nocy.jpg" alt="w nocy">
+          </a>
+
+          <a href="foto podstrony/1 world trade center/w_budowie.jpg" data-lightbox="example-set" data-title="W trakcie budowy">
+            <img class="mini" src="foto podstrony/1 world trade center/w_budowie.jpg" alt="budowa">
+          </a>
+          
+          <a href="foto podstrony/1 world trade center/lightning_strike.jpg" data-lightbox="example-set">
+            <img class="mini" src="foto podstrony/1 world trade center/lightning_strike.jpg" alt="piorun">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <a href="https://pl.wikipedia.org/wiki/1_World_Trade_Center" target="blank">
+        <button class="button">Źródła</button>
+      </a>
+    </div>
+    <br>
+  <div class="footer">
+      Autor: &copy; Bartosz Piasecki 3K
+  </div>
+</body>
+</html>

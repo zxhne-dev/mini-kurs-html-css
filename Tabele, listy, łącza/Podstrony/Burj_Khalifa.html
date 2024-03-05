@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burj Khalifa</title>
+    <link rel="stylesheet" href="podstrony.css">
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script>
+      $(window).scroll(function()
+		  {
+			if($(this).scrollTop()>50) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		  }
+		  );
+
+      window.onscroll = function() {myFunction()};
+  
+      function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+</head>
+
+<body>
+  <a href="#" class="scrollup"></a>
+  <a href="../index.html" class="back"></a>
+  <div class="header">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+    <div class="kontener">
+      <h1>Burj Khalifa</h1>
+      Burj Khalifa, (po polsku także: Wieża Chalify, przed 
+      otwarciem: Burdż Dubajj, pol. Wieża Dubaju) – wieżowiec w Dubaju, w 
+      Zjednoczonych Emiratach Arabskich, zbudowany przez przedsiębiorstwa Samsung Constructions, BESIX i Arabtec, o 
+      wysokości 829,8 metrów. Najwyższy budynek świata. Jego nazwa pochodzi od imienia szejka Chalify ibn Zajida Al 
+      Nahajjana, obecnego prezydenta Zjednoczonych Emiratów Arabskich.
+      Budowa, rozpoczęta 21 września 2004, zakończyła się 16 sierpnia 2009. Wysokość 827,9 metrów została osiągnięta 
+      17 stycznia 2009, a oficjalne otwarcie nastąpiło 4 stycznia 2010. Budynek ma 163 piętra użytkowe. Koszt jego 
+      budowy wyniósł 1,5 miliarda dolarów.
+      <hr>
+
+      <h2>Wygląd i wystrój</h2>
+      Wieżowiec Burj Khalifa zaprojektowany został przez przedsiębiorstwo architektoniczne Skidmore, 
+      Owings and Merrill, które projektowało także budynki Willis Tower oraz 1 World Trade Center. Ogólny jego 
+      wygląd nawiązuje do kwiatu pustyni z rodzaju Hymenocallis oraz architektury islamu (różne ornamenty). 
+      Budowla składa się z centralnego rdzenia oraz trzech „ramion”, które w miarę zwiększania się wysokości są 
+      coraz mniejsze, co nadaje jej smukłość. Na samym szczycie centralny rdzeń przechodzi w iglicę. Najniższe piętra 
+      przeznaczono na hotel, którego wystrojem zajął się Giorgio Armani.
+      <hr>
+
+      <h2>Skok ze szczytu</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iD4qsWnjsNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+
+      <h2>Galeria</h2>
+      <script src="lightbox/lightbox-plus-jquery.min.js"></script>
+      <div>
+        <div>
+          <a href="foto podstrony/burj khalifa/z_daleka.jpg" data-lightbox="example-set" data-title="Widok z daleka">
+            <img class="mini" src="foto podstrony/burj khalifa/z_daleka.jpg" alt="z daleka">
+          </a>
+
+          <a href="foto podstrony/burj khalifa/burj_khalifa_noc.jpg" data-lightbox="example-set" data-title="Burj khalifa nocą">
+            <img class="mini" src="foto podstrony/burj khalifa/burj_khalifa_noc.jpg" alt="noc">
+          </a>
+
+          <a href="foto podstrony/burj khalifa/widok_ze_szczytu.jpg" data-lightbox="example-set" data-title="Widok ze szczytu">
+            <img class="mini" src="foto podstrony/burj khalifa/widok_ze_szczytu.jpg" alt="widok ze szczytu">
+          </a>
+
+          <a href="foto podstrony/burj khalifa/lewandowski.jpg" data-lightbox="example-set" data-title="Robert Lewandowski na Burj Khalifa">
+            <img class="mini" src="foto podstrony/burj khalifa/lewandowski.jpg" alt="robert">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+    <a href="https://pl.wikipedia.org/wiki/Burd%C5%BC_Chalifa" target="blank">
+      <button class="button">Źródła</button>
+    </a>
+    </div>
+    <br>
+  <div class="footer">
+      Autor: &copy; Bartosz Piasecki 3K
+  </div>
+</body>
+</html>
