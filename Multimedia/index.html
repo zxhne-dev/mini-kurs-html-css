@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<script>
+	$(window).scroll(function()
+	{
+		if($(this).scrollTop()>180) $('.scrollup').fadeIn();
+		else $('.scrollup').fadeOut();		
+	}
+	);
+</script>
+<a href="#" class="scrollup"></a>
+<div class="dropdown">
+    <button class="dropbtn">Spis treści</button>
+    <div class="dropdown-content">
+        <a href="#wideo"><b>Wideo</b></a>
+            <a id="pod_menu" href="#wideo">Z dysku</a>
+            <a id="pod_menu" href="#yt">Z YouTube</a>
+            <a id="pod_menu" href="#p_yt">Pełnometrażowe z YouTube</a>
+            <a id="pod_menu" href="#inne_vid">Z innej strony (cda.pl)</a>
+        <a href="#audio"><b>Audio</b></a>
+            <a id="pod_menu" href="#audio_dysk">Z dysku</a>
+            <a id="pod_menu" href="#audio_zew">Z serwera zewnętrznego</a>
+            <a id="pod_menu" href="#spotify">Ze Spotify</a>
+            <a id="pod_menu" href="#soundcloud">Z Soundcloud</a>
+            <a id="pod_menu" href="#blad_audio">Rozwiązywanie błędów</a>
+        <a href="#image"><b>Grafika</b></a>
+            <a id="pod_menu" href="#jpeg">JPEG</a>
+            <a id="pod_menu" href="#png">PNG</a>
+            <a id="pod_menu" href="#gif">GIF</a>
+        <a href="#mapy"><b>Mapy Google</b></a>
+            <a id="pod_menu" href="#same_obj">Jednorodne obiekty</a>
+            <a id="pod_menu" href="#walk">Piesza trasa</a>
+            <a id="pod_menu" href="#bike">Trasa rowerowa</a>
+            <a id="pod_menu" href="#one_obj">Pojedynczy obiekt</a>
+    </div>
+</div>
+<div class="container">
+    <h1>Sposby osadzania plików multimedialnych na stronie internetowej</h1>
+        <h2 id="wideo">Plik wideo z dysku</h2>
+            <video width="560" height="315">
+                <source src="Multimedia/nosz_kurna_akurat.mp4"  type="video/mp4" >
+            </video>
+            <br>
+            <i>Jeśli nie możesz wystartować pliku wideo kliknij na niego prawym przyciskiem myszy i zaznacz opcję "Pokaż wszystkie elementy sterujące". Aby za każdym odświeżeniem strony nie trzeba było zaznaczać tej opcji należy dodać do kodu HTML atrybut "controls" tak jak w przykładzie poniżej.</i>
+        <br>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt (już w pełni działający) należy wkleić na stronę poniższy kod</div>
+                &lt;video controls width="560" height="315"><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Multimedia/nosz_kurna_akurat.mp4"<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="video/mp4"><br>
+                &lt;/video>
+            </div>
+            <p>Możemy zmienić wielkość odtwarzacza w celu dostosowania go do wielkości strony lub sekcji, aby osiągnąć zamierzony efekt należy dodać do kodu HTML właściwości "width" i "height" tak jak w przykładzie powyżej</p>
+        <hr id="yt">
+        <h2>Film z YouTube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hhlgphVf-1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;iframe width="560" height="315" src="https://www.youtube.com<br>/embed/hhlgphVf-1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+            </div>
+        <hr id="p_yt">
+        <h2>Film pełnometrażowy z YouTube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MmQqpEy96r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/MmQqpEy96r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+            </div>
+        <hr id="inne_vid">
+        <h2>Film z innej strony (cda.pl)</h2>
+        <iframe src="https://ebd.cda.pl/620x368/947695861" width="620" height="368" style="border:none;" scrolling="no" allowfullscreen name="v2" allow="encrypted-media"></iframe>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;iframe src="https://ebd.cda.pl/620x368/947695861" width="620" height="368" style="border:none;" scrolling="no" allowfullscreen name="v2" allow="encrypted-media">&lt;/iframe>
+            </div>
+        <hr class="hr_main" id="audio">
+        <h2 id="audio_dysk">Plik audio z dysku</h2>
+            <audio controls>
+                <source src="Multimedia/alok-love_again.mp3">
+            </audio>
+            <br>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;audio controls><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="Multimedia/alok-love_again.mp3"><br>
+                &lt;/audio>                
+            </div>
+        <hr id="audio_zew">
+        <h2>Plik audio z serwera zewnętrznego</h2>
+            <audio controls>
+                <source src="http://wosp.msw-pttk.org.pl/download/o_grzesiu_klamczuchu.mp3">
+            </audio>
+            <br>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;audio controls><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="http://wosp.msw-pttk.org.pl/download/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o_grzesiu_klamczuchu.mp3"><br>
+                &lt;/audio>                
+            </div>
+        <hr id="spotify">
+        <h2>Plik audio z serwisu Spotify</h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Y4LHpXT8uoLIvrQKkEToH?utm_source=generator" width="80%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <br>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Y4LHpXT8uoLIvrQKkEToH?utm_source=generator" width="80%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">&lt;/iframe>
+            </div>
+        <hr id="soundcloud">
+        <h2>Plik audio z serwisu Soundcloud</h2>
+        <iframe width="80%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1191192997&color=%233f06ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/man-min-war" title="Man Min War" target="_blank" style="color: #cccccc; text-decoration: none;">Man Min War</a> · <a href="https://soundcloud.com/man-min-war/ylona-garcia-entertain-me" title="Ylona Garcia - Entertain Me (Valorant Neon Teaser)" target="_blank" style="color: #cccccc; text-decoration: none;">Ylona Garcia - Entertain Me (Valorant Neon Teaser)</a></div>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                <textarea rows="5">&lt;iframe width="80%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1191192997&color=%23283 6f8&auto_play=false&hide_related=false&show_comments= true&show_user=true&show_reposts=false&show_teaser=true">&lt;/iframe>&lt;div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">&lt;a href="https://soundcloud.com/man-min-war" title="Man Min War" target="_blank" style="color: #cccccc; text-decoration: none;">Man Min War&lt;/a> · &lt;a href="https://soundcloud.com/man-min-war/ylona-garcia-entertain-me" title="Ylona Garcia - Entertain Me (Valorant Neon Teaser)" target="_blank" style="color: #cccccc; text-decoration: none;">Ylona Garcia - Entertain Me (Valorant Neon Teaser)&lt;/a>&lt;/div></textarea>
+            </div>
+        <hr id="blad_audio">
+        <h2>Rozwiązywanie błędu z za małym odtwarzaczem</h2>
+        <p>Zdarza się że po osadzeniu pliku audio w znaczniku &lt;iframe>, jest on "ściśnięty" tak jak w przykładzie poniżej, co jest spowodowane ustawieniem zbyt małej wysokości</p>
+        <iframe src="https://www.myinstants.com/media/sounds/auughhh.mp3" height="30" frameborder="0"></iframe>
+        <div class="sposob">
+            &lt;iframe src="https://www.myinstants.com/media/sounds/auughhh.mp3" <span class="blad">height="30"</span> frameborder="0">&lt;/iframe>
+        </div>
+        <p>Nie zaleca się zmieniania domyślej wysokości odtwarzacza ponieważ już bez tego wygląda i działa on poprawnie. Bez zmiany domyślej wysokości odtwarzacz powinien wyglądać tak:</p>
+        <iframe src="https://www.myinstants.com/media/sounds/auughhh.mp3" frameborder="0"></iframe>
+        <div class="sposob">
+            &lt;iframe src="https://www.myinstants.com/media/sounds/auughhh.mp3" frameborder="0">&lt;/iframe>
+        </div>
+        <p>Błędem jest już same użycie znacznika &lt;iframe> do osadzenia pliku audio, znacznie lepiej spisuje się do tego znacznik &lt;audio> który został zaprezentowany <a id="tutaj" href="#audio">tutaj</a></p>
+        <hr class="hr_main" id="image">
+        <h2>Wstawianie plików graficznych</h2>
+            <h3 id="jpeg">JPEG</h3>
+            <p>Jest to algorytm stratnej kompresji grafiki. Najczęściej wykorzystywany jest na stronach internetowych</p>
+            <img src="Multimedia/daj_mi_znak.jpg" width="500" height="500" alt="daj_mi_znak" title="daj mi znak">
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;img src="Multimedia/daj_mi_znak.jpg" width="500" height="500" alt="daj_mi_znak" title="daj mi znak">
+            </div>
+            <hr id="png">
+            <h3>PNG</h3>
+            <p>Jest to format bezstratnej kompresji o wysokiej jakości. Obsługuje stopniowaną przezroczystość (tzw. kanał alfa), dający możliwość transparentności</p>
+            <img src="Multimedia/moai.png" alt="moai" title="moai">
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;img src="Multimedia/moai.png alt="moai" title="moai"">
+            </div>
+            <hr id="gif">
+            <h3>GIF</h3>
+            <p>Format pliku graficznego z kompresją bezstratną. Pliki tego typu są powszechnie używane na stronach WWW, gdyż pozwalają na tworzenie prostych animacji, również z przezroczystym tłem oraz określonym opóźnieniem przy odtwarzaniu poszczególnych klatek animacji</p>
+            <img src="Multimedia/male-detected.gif" alt="male-detected" title="male detected, opinion tolerated">
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                &lt;img src="Multimedia/male-detected.gif" alt="male-detected" title="male detected, opinion tolerated">
+            </div>
+        <hr class="hr_main" id="mapy">
+        <h2>Osadzanie obiektów z Map Google</h2>
+        <div class="mapy">
+            <p><b>Co to Mapy Google?</b><br>Jest to serwis internetowy umożliwiający wyszukiwanie obiektów, oglądanie map, zdjęć lotniczych powierzchni Ziemi, panoramicznych widoków z poziomu ulic (Street view), natężenia ruchu ulicznego w czasie rzeczywistym, planowania tras podróży samochodem, transportem publicznym, rowerem, pieszo lub samolotem oraz tworzenie „wizytówek” firm. Został stworzony przez Google i uruchomiony 8 lutego 2005. Jest darmowy dla niekomercyjnych użytkowników.</p>  
+            <br><img src="Multimedia/Google_Maps_Logo_2020.png">   
+        </div>
+            <h3 id="same_obj">Parki Narodowe w Polsce</h3>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1hefNPfug80j71k4xAwkk9vJnFC8&hl=pl&ehbc=2E312F" width="640" height="480"></iframe>
+                <br>
+                <div class="sposob">
+                    <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                    &lt;iframe src="https://www.google.com/maps/d/embed?mid=1hefNPfug80j71k4xAwkk9vJnFC8&hl=pl&ehbc=2E312F" width="640" height="480">&lt;/iframe>
+                </div>
+            <hr id="walk">
+            <h3>Piesza trasa między stacją Warszawa Rakowiec a Centrum Łopuszańska</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9782.848721801129!2d20.949990743421584!3d52.19410422605937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x4719334de8ff250d%3A0xa99b336274d5e1d2!2sWarszawa%20Rakowiec%2C%20Warszawa!3m2!1d52.196819999999995!2d20.9660299!4m5!1s0x4719335759497409%3A0x55db89ad6718517f!2sCentrum%20%C5%81opusza%C5%84ska%2022%2C%20%C5%81opusza%C5%84ska%2022%2C%2002-220%20Warszawa!3m2!1d52.1920496!2d20.951516599999998!5e0!3m2!1spl!2spl!4v1650618452296!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <div class="sposob">
+                    <div class="sp">Aby uzyskać powyższy efekt należy wkleić na stronę poniższy kod</div>
+                    &lt;iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9782.848721801 129!2d20.949990743421584!3d52.19410422605937!2m3!1f0!2f0!3f 0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0 x4719334de8ff250d%3A0xa99b336274d5e1d2!2sWarszawa% 20Rakowiec%2C%20Warszawa!3m2!1d52.196819999999995!2d20. 9660299!4m5!1s0x4719335759497409%3A0x55db89ad6718517f!2s Centrum%20%C5%81opusza%C5%84ska%2022%2C%20%C5%81 opusza%C5%84ska%2022%2C%2002-220%20Warszawa!3m2!1d52.19 20496!2d20.951516599999998!5e0!3m2!1spl!2sp l!4v1650618452296!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> &lt;/iframe>
+                </div>
+            <hr id="bike">
+            <h3>Trasa rowerowa między Technikum Elektronicznym nr 1 im. Marcina Kasprzaka a moim domem</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d156842.34601199374!2d20.70943674640773!3d52.104088986278605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e1!4m5!1s0x471ecb61f83e4b81%3A0x326f47958eb8ca46!2sTechnikum%20Elektroniczne%20nr%201!3m2!1d52.2284753!2d20.9706396!4m3!3m2!1d51.9795065!2d20.8363631!5e0!3m2!1spl!2spl!4v1650664554733!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <div class="sposob">
+                    <div class="sp">Aby uzyskać powyższy efekt należy wykonać poniższe czynności</div>
+                    Tworzymy nową "Trasę", wybieramy sposób transportu - w tym przypadku rowerem, następnie wybieramy jedną z zaproponowanych tras przejazdu, klikamy w ikonę "Udostępnij", następnie "Umieszczanie mapy", "KOPIUJ HTML" i skopiowany kod wklejamy na swoją stronę.
+                </div>
+            <hr id="one_obj">
+            <h3>Molo w Kołobrzegu</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9338.260542546524!2d15.5619!3d54.187777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbef82f8f0243bfef!2sMolo%20w%20Ko%C5%82obrzegu!5e0!3m2!1spl!2spl!4v1652525534773!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="sposob">
+                <div class="sp">Aby uzyskać powyższy efekt należy wykonać poniższe czynności</div>
+                Klikamy na interesujący nas obiekt, wybieramy opcję "Udostępnij", następnie "Umieszczanie mapy", "KOPIUJ HTML" i skopiowany kod wklejamy na naszą stronę.
+            </div>
+
+</div>
+<div class="footer">
+    &copy; Copyright 2022 Bartosz Piasecki
+</div>
+</body>
+</html>

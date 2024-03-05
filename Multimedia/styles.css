@@ -1,0 +1,272 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(Multimedia/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.1111111111111112vw;
+}
+
+h1{
+    font-size: 2.2222222222222223vw;
+}
+
+h2{
+    font-size: 1.6666666666666667vw;
+}
+
+h3{
+    font-size: 1.3vw;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.06944444444444445vw solid rgb(0, 0, 0);
+    box-shadow: rgb(58, 255, 75) 0px 0px 0.6944444444444444vw;
+    background-color: rgb(5, 8, 25);
+    color: rgb(145, 223, 121);
+    text-align: center;
+    margin-bottom: 6.337135614702155vh;
+    margin-top: 2.534854245880862vh;
+}
+
+.sposob{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0.06944444444444445vw solid rgb(0, 0, 0);
+    background-color: rgb(255, 248, 225);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-top: 2.534854245880862vh;
+    margin-bottom: 2.534854245880862vh;
+    border-radius: 20px;
+    box-shadow: rgb(156, 255, 165) 0px 0px 0.6944444444444444vw;;
+    font-size: 0.9722222222222222vw;
+}
+
+.mapy{
+    width: 100%;
+    height: 40vh;
+}
+
+.mapy > p{
+    float: left;
+    text-align: left;
+    width: 40%;
+}
+
+.mapy > img{
+    float: right;
+    margin-right: 10%;
+    width: 16.641288433382138vw;
+    height: 30.441400304414003vh;
+    margin-top: 3%;
+}
+.sp{
+    text-align: center;
+    padding-bottom: 1.267427122940431vh;
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+.footer {
+    color: white;
+    font-size: 1.2445095168374818vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(5, 8, 24);
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(0, 255, 21, 0.795);
+}
+
+h1{
+    padding-bottom: 3.802281368821293vh;
+}
+
+.hr_main{
+    height: 0.8871989860583016vh; 
+    background:white;
+}
+
+textarea{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 248, 225);
+    color: rgb(0, 0, 0);
+    border: none;
+    max-width: 100%;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1.3888888888888888vw;
+}
+  
+textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+textarea::-webkit-scrollbar-thumb {
+    background-color: #bdbebe;
+    border-radius: 20px;
+    border: 0.4166666666666667vw solid transparent;
+    background-clip: content-box;
+}
+  
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+::-webkit-scrollbar {
+    width: 1.3888888888888888vw;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #61ffa3;
+    border-radius: 20px;
+    border: 0.4166666666666667vw solid transparent;
+    background-clip: content-box;
+
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #61ffa3a6;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background: rgb(5,8,54);
+    background: radial-gradient(circle, rgba(5,8,54,1) 45%, rgba(58,230,75,1) 84%);
+    color: white;
+    padding: 16px;
+    font-size: 1.1111111111111112vw;
+    border: none;
+    outline: 0.06944444444444445vw solid white;
+    width: 14vw;
+    border-radius: 20px;
+    margin-left: 11%;
+    font-weight: bold;
+    box-shadow: rgb(58, 255, 75) 0px 0px 0.8333333333333334vw;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: fixed;
+    display: inline-block;
+
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 14vw;
+    z-index: 1;
+    outline: 0.06944444444444445vw solid white;
+    margin-left: 11%;
+    height: 70vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: rgb(58, 255, 75) 0px 0px 0.8333333333333334vw;
+}
+
+.dropdown-content::-webkit-scrollbar{
+    display: none;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 1.520912547528517vh 1.1111111111111112vw;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(134, 134, 134);
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background: rgba(5, 8, 54, 0.63);
+    background: radial-gradient(circle, rgba(5, 8, 54, 0.692) 45%, rgba(58, 230, 75, 0.63) 84%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#pod_menu{
+    padding-left: 25%;
+}
+
+i{
+    font-size: 93%;
+}
+
+.blad{
+    font-weight: bold;
+    color: red;
+}
+
+#tutaj{
+    color: rgba(122, 255, 82, 0.822);
+    font-weight: bold;
+}
+
+
+h3{
+    text-align: center;
+}
+
+.scrollup {
+    display: none;
+    background-color: rgb(0, 202, 175);
+    width: 4vw;
+    height: 7vh;
+    text-align: center;
+    border-radius: 4px;
+    margin: 3.802281368821293vh;
+    position: fixed;
+    bottom: 3.802281368821293vh;
+    right: 2.0833333333333335vw;
+    text-decoration: none;
+}
+
+.scrollup:hover {
+    background-color: rgb(54, 126, 120);
+}
+
+.scrollup:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3vw;
+    line-height: 6.5vh;
+    color: rgb(255, 255, 255);
+    
+}
